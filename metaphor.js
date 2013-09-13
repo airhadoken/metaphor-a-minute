@@ -1,20 +1,51 @@
 var restclient = require('node-restclient');
 var Twit = require('twit');
-var app = require('express').createServer();
+var express = require('express');
+var app = express();
+// Set the values of these before deploying.
+var API_KEY, consumer_key, consumer_secret, access_token, access_token_secret;
+var recent_retweets = [];
+
+
+
+var fs = require('fs');
+var blacklist = [];
+try {
+  var data = fs.readFileSync('badwords.txt', 'ascii');
+  data.split('\n').forEach(function (line) {
+    if(line.length>0) {
+      blacklist.push(line);
+    }
+  });
+}
+catch (err) {
+  console.error("There was an error opening the file:");
+  console.log(err);
+}
+
+function isBlacklisted(data) {
+  var result = false;
+  for (var i=0;i<blacklist.length;i++) {
+    if (data.indexOf(blacklist[i]) >= 0) {
+      result = true;
+    }
+  }
+  return result;
+}
 
 // I deployed to Nodejitsu, which requires an application to respond to HTTP requests
 // If you're running locally you don't need this, or express at all.
 app.get('/', function(req, res){
-    res.send('Hello world.');
+    res.send("<h1>Recent retweets</h1>" + ((recent_retweets && recent_retweets.length) ? recent_retweets.join("<br>\n") : "No retweets"));
 });
 app.listen(3000);
 
 // insert your twitter app info here
 var T = new Twit({
-  consumer_key:         '', 
-  consumer_secret:      '',
-  access_token:         '',
-  access_token_secret:  ''
+  consumer_key:     consumer_key, 
+  consumer_secret:  consumer_secret,
+  access_token:     access_token,
+  access_token_secret: access_token_secret
 });
 
 var statement =   "";
@@ -23,21 +54,24 @@ var statement =   "";
 var getNounsURL = "http://api.wordnik.com/v4/words.json/randomWords?" +
                   "minCorpusCount=1000&minDictionaryCount=10&" +
                   "excludePartOfSpeech=proper-noun,proper-noun-plural,proper-noun-posessive,suffix,family-name,idiom,affix&" +
-                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=2&maxLength=12&" +
-                  "api_key=______YOUR_API_KEY_HERE___________";
+                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&maxLength=12&" +
+                  "api_key=" + API_KEY;
 
 var getAdjsURL =  "http://api.wordnik.com//v4/words.json/randomWords?" +
                   "hasDictionaryDef=true&includePartOfSpeech=adjective&limit=2&" + 
-                  "minCorpusCount=100&api_key=______YOUR_API_KEY_HERE___________";
+                  "minCorpusCount=100&api_key=" + API_KEY;
+
+var getVerbsURL =  "http://api.wordnik.com//v4/words.json/randomWords?" +
+                  "hasDictionaryDef=true&includePartOfSpeech=verb-transitive&limit=1&" + 
+                  "minCorpusCount=100&api_key=" + API_KEY;
 
 
 function makeMetaphor() {
   statement = "";
   restclient.get(getNounsURL,
   function(data) {
-    first = data[0].word.substr(0,1);
-    first2 = data[1].word.substr(0,1);
-    article = "a";
+    var first = data[0].word.substr(0,1);
+    var article = "a";
     if (first === 'a' ||
         first === 'e' ||
         first === 'i' ||
@@ -45,62 +79,20 @@ function makeMetaphor() {
         first === 'u') {
       article = "an";
     }
-   article2 = "a";
-    if (first2 === 'a' ||
-        first2 === 'e' ||
-        first2 === 'i' ||
-        first2 === 'o' ||
-        first2 === 'u') {
-      article2 = "an";
-    }
-
-    var connector = "is";
-    switch (Math.floor(Math.random()*12)) {
-      case 0:
-        connector = "of";
-      break;
-      case 1:
-        connector = "is";
-      break;
-      case 2:
-        connector = "is";
-      break;
-      case 3:
-        connector = "considers";
-      break;
-      case 4:
-        connector = "is";
-      break;
-    }
-
-    statement += article + " " + data[0].word + " " + connector + " " + article2 + " " + data[1].word;
 
     restclient.get(
-      getAdjsURL,
-      function(data) {
-        var connector = " and";
-        switch (Math.floor(Math.random()*8)) {
-          case 0:
-            connector = ", not";
-          break;
-          case 1:
-            connector = ", yet";
-          break;
-          case 2:
-            connector = " but";
-          break;
-          case 3:
-            connector = ",";
-          break;
-          case 4:
-            connector = ", but not";
-          break;
-        }
-        output = data[0].word + connector + " " + data[1].word;
-        statement = statement + ": " + output;
+      getVerbsURL,
+      function(vdata) {
+        statement = "Computers will never " + vdata[0].word + " " + article + " " + data[0].word + " as well as humans";
+
+        //statement = statement + ": " + output;
         console.log(statement);
+	if(isBlacklisted(vdata[0].word) || isBlacklisted(data[0].word)) {
+	    statement = "[This reassurance was deemed unacceptable for humans]";
+	    console.log("Previous line tweeted as:", statement);
+	}
         T.post('statuses/update', { status: statement}, function(err, reply) {
-          console.log("error: " + err);
+          if(err) console.error("error: " + err);
           console.log("reply: " + reply);
         });
       }    
@@ -109,11 +101,24 @@ function makeMetaphor() {
   ,"json");
 }
 
+var last_rt = 1;
 function favRTs () {
-  T.get('statuses/retweets_of_me', {}, function (e,r) {
-    for(var i=0;i<r.length;i++) {
-      T.post('favorites/create/'+r[i].id_str,{},function(){});
-    }
+  recent_retweets = recent_retweets.length > 100 ? recent_retweets.slice(0, 100) : recent_retweets;
+  T.get('statuses/retweets_of_me', { since_id : last_rt }, function (e,r) {
+    e && console.error(e);
+    r.forEach(function(tweet,i) {
+      setTimeout(function() {
+	  last_rt = Math.max(last_rt, tweet.id);
+	  T.get("statuses/retweets/"+tweet.id_str,{}, function(e, rt) {
+	      e && console.error("Error when getting retweets:", e);
+	      var sns = rt.map(function(t) { return "@" + t.user.screen_name }).join(", ");
+	      recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
+	  });
+	  T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
+	      e && console.error("Error creating favorite", e);
+	  });
+      }, Math.floor(i / 15) * 15*60000); //Only allowed to get 15 retweet lists every 15 minutes
+    });
     console.log('harvested some RTs'); 
   });
 }
