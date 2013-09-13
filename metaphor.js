@@ -14,7 +14,7 @@ try {
   var data = fs.readFileSync('badwords.txt', 'ascii');
   data.split('\n').forEach(function (line) {
     if(line.length>0) {
-      blacklist.push(line);
+      blacklist.push(line.trim().toLowerCase());
     }
   });
 }
@@ -26,7 +26,7 @@ catch (err) {
 function isBlacklisted(data) {
   var result = false;
   for (var i=0;i<blacklist.length;i++) {
-    if (data.indexOf(blacklist[i]) >= 0) {
+    if (data.trim().toLowerCase() === blacklist[i]) {
       result = true;
     }
   }
@@ -108,15 +108,17 @@ function favRTs () {
     e && console.error(e);
     r.forEach(function(tweet,i) {
       setTimeout(function() {
-	  last_rt = Math.max(last_rt, tweet.id);
+	  last_rt = Math.max(last_rt, tweet.id) + 1;
 	  T.get("statuses/retweets/"+tweet.id_str,{}, function(e, rt) {
 	      e && console.error("Error when getting retweets:", e);
 	      var sns = rt.map(function(t) { return "@" + t.user.screen_name }).join(", ");
 	      recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
 	  });
-	  T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
-	      e && console.error("Error creating favorite", e);
-	  });
+	  if(!tweet.favorited) {
+	      T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
+		  e && console.error("Error creating favorite", e);
+	      });
+	  }
       }, Math.floor(i / 15) * 15*60000); //Only allowed to get 15 retweet lists every 15 minutes
     });
     console.log('harvested some RTs'); 
