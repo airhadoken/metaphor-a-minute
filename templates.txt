@@ -1,0 +1,384 @@
+don't hate me because I'm {adjective}
+to {verb-intransitive} or not to {$1}
+{noun} is the new {noun}
+I'm not {a} {noun}, but I play one on TV
+I am {noun-singular}, hear me {verb-intransitive}
+{noun,adjective}core
+{noun}gate
+Dammit Jim, I'm {a} {noun}, not {a} {noun}!
+{noun-plural}? We don't need no stinkin' {$1}!
+have {noun-singular} will travel
+save {a} {noun-singular}, ride {a} {noun-singular}
+In {noun}, no one can hear you {verb-intransitive}
+If Eskimos have {n} words for snow, {proper-noun-plural} must have {n} words for {noun}
+In Soviet Russia, {noun-plural} {verb-transitive} you!
+I, for one, welcome our {adjective} overlords
+{noun-plural} and {noun-plural} and {noun-plural} oh my!
+Take this {noun-singular} and shove it!
+When I say {noun}, what I really mean is {noun}
+A few {noun-plural} short of {a} {noun-singular}
+not the {adjective}est {noun} in the {noun-singular}
+{verb-transitive} me no {noun-plural}
+that's not {a} {noun-singular}; this is {a} {$2}
+yes Virginia, there is {a} {proper-noun}
+Im in ur {noun-singular} {vt-gerund} ur {noun-plural}
+If it's wrong to {verb-intransitive}, I don't want to be right
+Got {noun-singular}?
+the only good {noun-singular} is a dead {$1}
+Whatever {verb-transitive}s your {noun}
+going to {verb-intransitive} like I've never {verb-intransitive}ed before
+WW{lc}D?
+we're gonna need a bigger {noun-singular}
+{noun} is hard, let's go shopping
+These are not the {noun-plural} you're looking for
+bring me your poor, your tired, your {adjective}
+There's no crying in {noun}
+{vi-gerund} 2: Electric Boogaloo
+My kingdom for {a} {noun-singular}
+I ❤ {noun}
+This is your brain on {noun}
+The first rule of {noun} is, you don't talk about {$1}
+I {verb-intransitive} therefore I am
+consider the {noun-singular}
+all your {noun-singular} are belong to us
+It's {noun-plural} all the way down
+{n} {noun-plural} to {verb-transitive} before you die
+{noun} is the {adjective}est {noun-singular} this side of the Mississippi
+Who's got two thumbs and {verb-intransitive}s? This guy
+{proper-noun}'s world
+as {a} {noun-singular}, {noun-singular} is a great {noun-singular}
+2 {noun-plural}, 3 {$1}, many {$1}
+{noun-singular,proper-noun} is the {noun-singular,proper-noun} of {noun-singular,proper-noun}
+busier than {a} {adjective} {noun-singular}
+I'm from {proper-noun} and I'm here to help
+now if you'll excuse me, I have {a} {noun-singular} to {verb-transitive}
+Hardly a {noun} goes by without {vi-gerund}
+If that's {noun}, every {noun-singular} should be so lucky
+{noun-plural} gone wild
+no rest for the {adjective}
+{verb-intransitive} and call me {given-name}
+The end of the {noun-singular} as we know it
+A lot of people, when they have a problem, say ‘I know, I'll use {noun}'. Now they have two problems
+{a} {adjective}er shade of {noun}
+If it's not the {noun}, it's the {noun}
+That's why they call it {noun}
+Once {a} {noun}, always {a} {$2}
+What is this {noun-singular} of which you speak?
+{noun-singular}? What is {$1}?
+{adjective,verb-intransitive}y Mc{$1}erson
+{noun} considered harmful
+Hey may be {a} {noun-singular}, but he's our {$2}
+It's {noun-singular}, {given-name}, but not as we know it
+{noun} is to {noun} what {noun} is to {noun}
+{adjective} is to {adjective} what {adjective} is to {adjective}
+{verb} is to {verb} what {verb} is to {verb}
+{noun} is to {noun} what {noun} is to {$2}
+{adjective} is to {adjective} what {adjective} is to {$2}
+{verb} is to {verb} what {verb} is to {$2}
+Sufficient unto the {noun-singular} is the {noun-singular} thereof
+You can't {verb-transitive} your {noun-singular} and {verb-transitive} it too
+Stupid {noun} tricks
+Pimp my {noun}
+If {noun-plural} are outlawed, only outlaws will have {$1}
+A watched {noun-singular} never {verb-intransitive}s
+The once and future {noun-singular}
+Nothing says {vi-gerund} like {noun}
+{noun}: panacea or {noun}?
+Men are from {proper-noun}, women are from {proper-noun}
+{noun-plural} are from Mars, {noun-plural} are from Venus
+{noun-plural} are from {proper-noun}, {noun-plural} are from {proper-noun}
+Are we {adjective,preposition,noun-plural} yet?
+the {noun} from Hell
+{noun} city, {$1}ville
+{noun-plural,proper-noun-plural} for Jesus
+{noun}'s {$1}
+Step away from the {noun}
+Lol{noun-plural,noun}
+Invisible {noun}
+I can haz {noun}?
+I made you {a} {noun}, but I eated it
+{noun}-lorn
+{noun,adjective}-tastic
+{noun,adjective}-tacular
+One {noun-singular} does not a {noun-singular} make
+That and {n} {noun-plural} will buy you {a} {noun-singular}
+a fine line between {noun} and {noun}
+If I had {a} {noun-singular} for every {noun-singular}
+The {noun-singular} that {verb-intransitive}s together {verb-intransitive}s together
+You can take the {noun} out of the {noun}, but you can't take the {$2} out of the {$1}
+{noun-plural} will be {$1}
+I've got your {noun} (RIGHT HERE)
+All over but the {noun}
+If you like {noun,noun-plural}, you'll love {noun,noun-plural}
+If you like {vi-gerund}, you'll love {vi-gerund}
+What happens in {proper-noun} stays in {$1}
+Et tu, {given-name}?
+Is that {a} {noun-singular} I see before me?
+{noun} is dead, long live {noun}
+{a} {noun-singular} by any other name
+{noun-singular} is {$1} is {$1} is {$1}
+{noun-singular} is a dish best served {adjective}
+{noun,adjective,proper-noun} or bust
+Every time {noun-plural} {verb-intransitive}, {noun-plural} {verb-intransitive}
+When the going gets {adjective}, the {$1} {verb-intransitive}
+the {noun-singular} to end all {%1}s
+the care and feeding of {noun-plural}
+{n} {noun-plural} can't be wrong
+{n} {noun-plural} agree
+{n} out of {n} {noun-plural} agree
+{vi-gerund} for fun and profit
+today {noun,proper-noun}, tomorrow {noun,proper-noun}!
+Is that {a} {noun-singular} in your pocket?
+{given-name}, I have a feeling we're not in {proper-noun} anymore
+Better {vi-gerund} through {noun}
+{a} {noun-singular} is a terrible thing to {verb-transitive}
+Will the real {noun,proper-noun} please stand up?
+Will the real {given-name} {family-name} please stand up?
+{given-name} has left the building
+Happiness is {a} {noun-singular}
+Happiness is {a} {adjective} {noun-singular}
+The good, the bad, and the {adjective}
+Where no {noun-singular} has {past-participle} before
+It's {n} o'clock. Do you know where your {noun-plural} are?
+If it's Tuesday, it must be {noun}
+Holy {noun,adjective}, Batman!
+{noun} and the single {noun-singular}
+{adjective} eye for the {adjective} guy
+It's {a} {noun-singular}! It's {a} {noun-singular}! It's {proper-name,given-name,noun}!
+Everything you always wanted to know about {noun}, but were afraid to ask
+That's no moon; it's {a} {noun}
+{noun} of {vt-gerund}
+Any sufficiently {adjective} {noun-singular} is indistinguishable from {noun}
+Friends don't let friends X
+X, thy name is Y
+to X is human
+This is your X. This is your X on Y
+All I really need to know about X I learned in Y
+I knew X. (X was a friend of mine.) Y, you are no X
+A kindler, gentler X
+Not your {daddy|father|grandma|granny}'s X
+X, X, X
+Will X for Y
+The mother of all X
+It's the X, stupid
+You might be an X if
+Will someone please think of the X?
+X, N dollars. Y, M dollars. Z, priceless.
+X called. They want their Y back.
+If X then the terrorist have won.
+If by X you mean Y
+Not without my X / Nicht ohne meinen X
+Our man in X / Unser Mann in X
+Death of an X / Tod eines X
+A fistful of X / Fuer eine Handvoll X
+The unbearable lightness of X / Die unertrgliche Leichtigkeit des X
+All roads lead to X / Alle Wege fuehren nach X
+X in times of Y / X in Zeiten des/der Y
+to X is human
+X and let Y / X und Y lassen
+In the beginning there was X / Am Anfang war das X
+One does not simply X into Mordor (suggested in email)
+Xzilla (suggested in comments)
+vast, X-wing conspiracy
+X, and by X I mean Y[not X]
+Age and treachery beat youth and X every time (not sure about this one; http://recycledknowledge.blogspot.com/2007/01/old-farts-have-it.html)
+His X was his undoing
+If you look up X in the dictionary, you'll find a picture of Y
+X is not a crime
+No one ever got fired for X
+How do you make a small fortune in X? Start with a large one.
+I love the smell of X in the morning. (It's the smell of … victory.)
+Bury My Heart at X (Wounded Knee) (German)
+Of X and Y (of mice and men)
+(You can never be) too X or too Y (rich or thin)
+There is no business like X business / there is no X like [adjective/noun] X
+Dial X for X-word (M for Murder)
+Sleepless in X (German)
+Life is too short for X (German)
+All power to X (the people)
+X expects that every Y will do his Z (England expects that every man will do his duty)
+[Grand|Great] unified X
+Who are you and what have you done with X? (http://itre.cis.upenn.edu/~myl/languagelog/archives/005226.html)
+X de chez X (French (mostly) equivalent of “X city” and “Xy McY/Xerson; need notes on origin)
+Post-X (modern)
+X is like Y on Z[drug] (tentative) / X auf Speed (also tentative)
+An X a day keeps the Y away
+X is bunk (history)
+Portrait of the X as a Y / Porträt des X als Y
+You are X[name] and I claim my Y[often "five pounds"] (British)
+Who's afraid of X?
+the big X in the sky (tentative)
+Semper X (tentative)
+X-(a)holic (morphology)
+X(en)freude (morphology)
+X(o)nomics (morphology)
+Xfest (morphology)
+X(a)thon (morphology)
+SchadenX (morphology)
+X, call your office (original discussed by Ben Zimmer here: http://itre.cis.upenn.edu/~myl/languagelog/archives/004921.html)
+X considered harmful (GOTO, http://xkcd.com/292/)
+Give blood, play X
+homo X (species names)
+X nation
+One (wo)man's X is another (wo)man's Y
+You can't keep a good X down
+X is bliss
+When did it become X to Y?
+Who died and made you X?
+Saving the world, one X at a time
+Make X, not Y
+Crouching X, hidden Y
+X with a capital X
+Put the X in Y
+You can't spell X without Y
+X makes the baby Jesus cry
+on a scale from one to X, (he's a Y) http://itre.cis.upenn.edu/~myl/languagelog/archives/004944.html
+X and the city (X only one syllable?)
+teach an old X new Ys (Y rhymes with “tricks”?)
+you say X, I say Y (tomato)
+the boy who cried X
+today X; tomorrow, the world!
+X 2: Electric Boogaloo
+whatever X wants, X gets
+my X runneth over
+I eat X for breakfast
+X leads to Y. Y leads to Z. Z leads to A.
+X rising
+X, schmX
+I can't believe it's not X
+Honey, I shrunk the X
+Use X to control X (Chinese/Korean) / Fight X with X
+it's X, bitch [not there yet, but popular in the young folks' speech, I hear]
+don't X me, bro! [not there yet, but popular in the young folks' speech, I hear]
+there's no X[letter] in Y[word not containing letter]
+X and the city
+dude, where's my X
+X fu
+X for dummies
+save the X, save the world [not there yet]
+my X is longer than yours
+Blue Horseshoe loves X
+from X's mouth to God's ear (http://itre.cis.upenn.edu/~myl/languagelog/archives/005226.html. snowclone or idiom/proverb with open slot?)
+all that and a X
+every generation gets the X it deserves
+tough on X, (and) tough on the causes of X
+brother, can you spare a X?
+sweet/holy X of Y (attributed to Futurama‘s Hermes whatsit, but this structure is tricky as it's so flexible. his usage is snowcloneish, not sure if I can blanket claim this as one)
+love me, love my X
+if God had intended X, he wouldn't have invented Y
+X out with your Y out
+show me and X, and I will show you a Y
+X and its enemies
+X and its discontents
+critique of X reason
+X and its friends
+the end of X
+the Rise and Fall of X
+from X with love
+is X dead?
+X is an N-letter word
+one must imagine X happy
+no X please, we're Y
+every X has the Y it deserves
+keep X weird
+two, two, two X in one (http://en.wikipedia.org/wiki/Certs)
+where good X go to die
+X, sweet X
+this X is clean (Poltergeist)
+what price X?
+a farewell to X
+design for X (X0: living; Noel Coward)
+they can have my X when they pry it from my cold, dead Y (maybe)
+man does not live by X alone
+the X is a lie (from Portal. this is a young one.)
+instant X–just add Y
+all over X like Y on Z
+X, we hardly knew (ye|ya)
+X has no Y; X needs no Y
+great X's ghost (this seems related to the Futurama one, also other Robin-isms)
+the tao of X
+suddenly, X! thousands of them!
+X! X like the wind!
+does this X make me look fat? (X is optional, though)
+our X, our selves
+what's a little X between friends?
+X ha(th|s) its privileges
+color me X
+he couldn't X his way out of a paper bag
+X is as X does
+bitches don't know 'bout my X (not a lot of instances of this one yet)
+what was is that first attracted you to X, Y?
+N X do not a Y make
+the X whisperer
+X: threat or menace?
+your right to X ends where my Y begins
+X? in my Y? (not sure about this one)
+I am the very model of a modern X
+how I stopped X and learned to love Y
+you can lead an X to Y but you can't make it Z
+come for the X, stay for the Y
+LastName. (pause) FirstName LastName
+I'm bringing X back
+X 2.0
+The Talented Mr. X
+Xes of the world, unite! You have nothing to lose but your Ys!
+the X! it burns!
+you had me at X
+an X we can believe in [http://serendipity.lascribe.net/ling-lang/linguistics/2008/07/a-snowclone-we-can-believe-in/]
+your inner X
+X encounters of a Y kind
+cool Xings
+if you seek X, look around you
+I'm out like an X [Prep [NP Y]]
+love is a many x-[e|o]red thing
+you can lead an X to Y but you can't make him/her/it Z
+when X met Y
+X 101 [same as X for Dummies]
+where's your X now?
+there's gold in them thar X
+one X to rule (Y?) them all
+X agonistes
+X on, Y off
+if X is Y, then I'm Z
+hot X-on-X action
+just X it and forget it!
+so [many|much] X, so little time
+better the X you know than the Y you don't / más vale X conocido que Y por conocer (see comment on this page)
+X walk with me (not sure about this one, haven't found much variation)
+X giveth; X taketh away
+love in the time of X
+X. Y. Repeat.
+an X's work is never done.
+night of the living X
+we are all X now. (2 senses: monarchists/Keynesians; Americans/Hokies/Georgians)
+they shoot X, don't they?
+the power of X of X compels you!
+when X attack (in reference to reality TV?)
+get your X on
+in X we trust
+X Y is X (long cat; also Xing Y Xes)
+I'd X her Y (is this really a snowclone?)
+the partnership for an X-free Y
+I was a teenage X (werewolf)
+ain't no party like an X party
+let a thousand Xes bloom
+two X, no waiting
+every X in the book
+X(ness) is next to godliness
+X-ass Y/X ass-Y (not sure about this one)
+I take/like my X like I like my Y
+black, white, and X all over
+live long and X
+may the X be with you
+X your Y, X the world
+it's all fun and games until X
+you made your X, now Y (lie) in it
+one giant leap?
+stuff X people like (http://ampersand.gosedesign.net/stuff-_____-people-like/)
+Xer than a Y on Z
+Xware (I think B. Zimmer has written on this one)
+what if they gave an X and nobody came?
+X-shaped hole
+that's no X–it's a space station!
+the X whisperer
+never mind the X, here's Y

@@ -1,14 +1,37 @@
+var fs = require('fs');
 var restclient = require('node-restclient');
 var Twit = require('twit');
 var express = require('express');
+var deferred = require("deferred");
 var app = express();
 // Set the values of these before deploying.
 var API_KEY, consumer_key, consumer_secret, access_token, access_token_secret;
 var recent_retweets = [];
+var $ = {
+  Deferred : deferred
+  , when : deferred
+};
 
 
 
-var fs = require('fs');
+var lines;
+try {
+  lines = fs.readFileSync('templates.txt', 'ascii');
+  lines = lines.split('\n').map(function (line) {
+    return line.length ? line : undefined;
+  });
+}
+catch (err) {
+  console.error("There was an error opening the file:");
+  console.log(err);
+}
+
+/*
+word types: "noun", "adjective", "verb", "adverb", "interjection", "pronoun", "preposition", "abbreviation", //"affix" no results, 
+//"article" no results other than 'an' with a macron on the 'a' , // "auxiliary-verb" less useful, "conjunction", "definite-article", 
+"family-name", "given-name", //"idiom", "imperative", "noun-plural", "noun-posessive", "past-participle", "phrasal-prefix", 
+"proper-noun", "proper-noun-plural", "proper-noun-posessive", "suffix", "verb-intransitive", "verb-transitive"
+*/
 var blacklist = [];
 try {
   var data = fs.readFileSync('badwords.txt', 'ascii');
@@ -32,6 +55,104 @@ function isBlacklisted(data) {
   }
   return result;
 }
+var backref = function(n) {
+  return function(value, index, listdfd) {
+    return listdfd.then(function(pack) {
+      var dfds = pack[0];
+      var words = pack[1];
+      var idxs = words.map(function(word, i) {
+        return (/\{.*\}/).test(word) ? i : undefined;
+      }).filter(function(i) {
+        return i != null;
+      }); 
+      return dfds[idxs[n - 1]]();
+    });
+  }
+}
+
+var gerund_func;
+var processors = {
+  "a" : function(value, index, listdfd) {
+    return listdfd.then(function(pack) {
+      var list = pack[0];
+      return list[index + 1].then(function(word) {
+        retval = /^[aeiou]/.test(word.trim()) ? "an" : "a";
+        return retval;
+      });
+    });
+  }
+  , "$1" : backref(1)
+  , "$2" : backref(2)
+  , "noun-singular" : function(value, index, listdfd) {
+    return defaultprocessor("noun", index, listdfd, "http://api.wordnik.com//v4/words.json/randomWords?" +
+                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" + 
+                  "minCorpusCount=100&api_key=" + API_KEY + "&excludePartOfSpeech=noun-plural,proper-noun-plural");
+  }
+  , "n" : function(value, index, listdfd) {
+    return new $.Deferred().resolve(Math.floor(Math.random() * 1000));
+  }
+  , "lc" : function(value, index, listdfd) {
+    return listdfd.then(function(pack)  {
+      var token = pack[1][index];
+      var s = token.replace(/\{.*\}/, String.fromCharCode(65 + Math.floor(Math.random() * 26)));
+      return new $.Deferred().resolve(s);
+    });
+  }
+  , "vi-gerund" : (gerund_func = function(type) {
+    return function(value, index, listdfd) {
+      var d = $.Deferred();
+      defaultprocessor(type, index, listdfd).then(function(word) {
+        restclient.get(
+          "http://api.wordnik.com/v4/word.json/" + word + "/relatedWords?"
+          +"useCanonical=true&relationshipTypes=verb-form&limitPerRelationshipType=10&api_key="
+          + API_KEY
+          , function(vdata) {
+            listdfd.then(function(pack) {
+              var token = pack[1][index];
+              var ws = (JSON.parse(vdata)[0] || {}).words;
+              var w = ws && ws.filter(function(wd) {
+                return (/ing$/).test(wd.word);
+              })[0];
+              w = w || (word + "ing");
+              if(isBlacklisted(w)) {
+                defaultprocessor(value, index, listdfd, getURL).then(function(ow) {
+                  dfd.resolve(ow).done();
+                });
+              } else {
+                d.resolve(token.replace(/\{.*\}/, w)).done();
+              }
+            });
+          }
+        );
+      });
+      return d.promise;
+    };
+  })("verb-intransitive")
+  , "vt-gerund" : gerund_func("verb-transitive")
+};
+var defaultprocessor = function(value, index, listdfd, getURL) {
+ getURL = getURL || "http://api.wordnik.com//v4/words.json/randomWords?" +
+                  "hasDictionaryDef=true&includePartOfSpeech=" + value + "&limit=1&" + 
+                  "minCorpusCount=100&api_key=" + API_KEY;
+ var dfd = $.Deferred();
+ restclient.get(
+  getURL,
+  function(vdata) {
+    listdfd.then(function(pack) {
+      var token = pack[1][index];
+      var word = JSON.parse(vdata)[0].word;
+      if(isBlacklisted(word)) {
+        defaultprocessor(value, index, listdfd, getURL).then(function(w) {
+          dfd.resolve(w).done();
+        });
+      } else {
+        dfd.resolve(token.replace(/\{.*\}/, word)).done();
+      }
+    });
+  });
+ return dfd.promise;
+};
+
 
 // I deployed to Nodejitsu, which requires an application to respond to HTTP requests
 // If you're running locally you don't need this, or express at all.
@@ -48,57 +169,44 @@ var T = new Twit({
   access_token_secret: access_token_secret
 });
 
-var statement =   "";
 
-// insert your Wordnik API info below
-var getNounsURL = "http://api.wordnik.com/v4/words.json/randomWords?" +
-                  "minCorpusCount=1000&minDictionaryCount=10&" +
-                  "excludePartOfSpeech=proper-noun,proper-noun-plural,proper-noun-posessive,suffix,family-name,idiom,affix&" +
-                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&maxLength=12&" +
-                  "api_key=" + API_KEY;
-
-var getAdjsURL =  "http://api.wordnik.com//v4/words.json/randomWords?" +
-                  "hasDictionaryDef=true&includePartOfSpeech=adjective&limit=2&" + 
-                  "minCorpusCount=100&api_key=" + API_KEY;
-
-var getVerbsURL =  "http://api.wordnik.com//v4/words.json/randomWords?" +
-                  "hasDictionaryDef=true&includePartOfSpeech=verb-transitive&limit=1&" + 
-                  "minCorpusCount=100&api_key=" + API_KEY;
-
-
-function makeMetaphor() {
-  statement = "";
-  restclient.get(getNounsURL,
-  function(data) {
-    var first = data[0].word.substr(0,1);
-    var article = "a";
-    if (first === 'a' ||
-        first === 'e' ||
-        first === 'i' ||
-        first === 'o' ||
-        first === 'u') {
-      article = "an";
+//Step 1: List deferred resolves to the list of deferreds, one for each token.
+//Step 2: wait on each token.
+//Step 3: when all tokens have resolves (some being dependent on others, or REST calls), render.
+function makeSnowclone() {
+  var listdfd = new $.Deferred();
+  var line = lines[Math.floor(Math.random() * 151)];
+  var list = line.split(" ").filter(function(token) {
+    return !!token.length;
+  });
+  var dfdlist = list.map(function(token, index) {
+    var tc;
+    token = token.trim();
+    var dfd;
+    if(tc = /\{(.*)\}/.exec(token)) {
+      dfd = processors[tc[1]] 
+            ? processors[tc[1]](tc[1], index, listdfd.promise) 
+            : defaultprocessor(tc[1], index, listdfd.promise);
+    } else {
+      dfd = new $.Deferred().resolve(token);
     }
+    return dfd;
+  });
+  listdfd.resolve([dfdlist, list]);
 
-    restclient.get(
-      getVerbsURL,
-      function(vdata) {
-        statement = "Computers will never " + vdata[0].word + " " + article + " " + data[0].word + " as well as humans";
+  $.when.apply(
+    $,
+    dfdlist
+  ).done(function(results) {
+    if(typeof results !== "string")
+      results =  Array.prototype.join.call(results, " ");
+    console.log(results);
 
-        //statement = statement + ": " + output;
-        console.log(statement);
-	if(isBlacklisted(vdata[0].word) || isBlacklisted(data[0].word)) {
-	    statement = "[This reassurance was deemed unacceptable for humans]";
-	    console.log("Previous line tweeted as:", statement);
-	}
-        T.post('statuses/update', { status: statement}, function(err, reply) {
-          if(err) console.error("error: " + err);
-          console.log("reply: " + reply);
-        });
-      }    
-    ,"json");
-  }    
-  ,"json");
+    T.post('statuses/update', { status: results}, function(err, reply) {
+      if(err) console.error("error: " + err);
+      console.log("reply: " + reply);
+    });
+  });
 }
 
 var last_rt = 1;
@@ -108,17 +216,17 @@ function favRTs () {
     e && console.error(e);
     r.forEach(function(tweet,i) {
       setTimeout(function() {
-	  last_rt = Math.max(last_rt, tweet.id) + 1;
-	  T.get("statuses/retweets/"+tweet.id_str,{}, function(e, rt) {
-	      e && console.error("Error when getting retweets:", e);
-	      var sns = rt.map(function(t) { return "@" + t.user.screen_name }).join(", ");
-	      recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
-	  });
-	  if(!tweet.favorited) {
-	      T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
-		  e && console.error("Error creating favorite", e);
-	      });
-	  }
+    last_rt = Math.max(last_rt, tweet.id) + 1;
+    T.get("statuses/retweets/"+tweet.id_str,{}, function(e, rt) {
+        e && console.error("Error when getting retweets:", e);
+        var sns = rt.map(function(t) { return "@" + t.user.screen_name }).join(", ");
+        recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
+    });
+    if(!tweet.favorited) {
+        T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
+      e && console.error("Error creating favorite", e);
+        });
+    }
       }, Math.floor(i / 15) * 15*60000); //Only allowed to get 15 retweet lists every 15 minutes
     });
     console.log('harvested some RTs'); 
@@ -128,9 +236,10 @@ function favRTs () {
 // every 2 minutes, make and tweet a metaphor
 // wrapped in a try/catch in case Twitter is unresponsive, don't really care about error
 // handling. it just won't tweet.
+makeSnowclone();
 setInterval(function() {
   try {
-    makeMetaphor();
+    makeSnowclone();
   }
  catch (e) {
     console.log(e);
