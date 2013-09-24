@@ -66,7 +66,7 @@ var backref = function(n) {
         return i != null;
       });
       return dfds[idxs[n - 1]].then(function(word) {
-        return words[idxs[n-1]].replace(/\{.*\}/, word);
+        return words[index].replace(/\{.*\}/, word);
       });
     });
   };
