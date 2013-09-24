@@ -16,7 +16,7 @@ var $ = {
 
 var lines;
 try {
-  lines = fs.readFileSync('templates.txt', 'ascii');
+  lines = fs.readFileSync('templates.txt', 'utf-8');
   lines = lines.split('\n').map(function (line) {
     return line.length ? line : undefined;
   });
@@ -64,13 +64,15 @@ var backref = function(n) {
         return (/\{.*\}/).test(word) ? i : undefined;
       }).filter(function(i) {
         return i != null;
-      }); 
-      return dfds[idxs[n - 1]]();
+      });
+      return dfds[idxs[n - 1]].then(function(word) {
+        return words[idxs[n-1]].replace(/\{.*\}/, word);
+      });
     });
-  }
-}
+  };
+};
 
-var gerund_func;
+var gerund_func, number_func;
 var processors = {
   "a" : function(value, index, listdfd) {
     return listdfd.then(function(pack) {
@@ -81,16 +83,16 @@ var processors = {
       });
     });
   }
-  , "$1" : backref(1)
-  , "$2" : backref(2)
   , "noun-singular" : function(value, index, listdfd) {
     return defaultprocessor("noun", index, listdfd, "http://api.wordnik.com//v4/words.json/randomWords?" +
                   "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" + 
                   "minCorpusCount=100&api_key=" + API_KEY + "&excludePartOfSpeech=noun-plural,proper-noun-plural");
   }
-  , "n" : function(value, index, listdfd) {
-    return new $.Deferred().resolve(Math.floor(Math.random() * 1000));
-  }
+  , "n" : (number_func = function(max) {
+    return function(value, index, listdfd) {
+      return new $.Deferred().resolve(Math.floor(Math.random() * max) + 1);
+    }
+  })(1000)
   , "lc" : function(value, index, listdfd) {
     return listdfd.then(function(pack)  {
       var token = pack[1][index];
@@ -130,6 +132,13 @@ var processors = {
   })("verb-intransitive")
   , "vt-gerund" : gerund_func("verb-transitive")
 };
+[1,2,3,4,5,6,7,8,9].forEach(function(i) {
+  processors["$" + i] = backref(i);
+});
+[10,12,100,1000].forEach(function(i) {
+  processors["n" + i] = number_func(i);
+});
+
 var defaultprocessor = function(value, index, listdfd, getURL) {
  getURL = getURL || "http://api.wordnik.com//v4/words.json/randomWords?" +
                   "hasDictionaryDef=true&includePartOfSpeech=" + value + "&limit=1&" + 
@@ -175,7 +184,7 @@ var T = new Twit({
 //Step 3: when all tokens have resolves (some being dependent on others, or REST calls), render.
 function makeSnowclone() {
   var listdfd = new $.Deferred();
-  var line = lines[Math.floor(Math.random() * 151)];
+  var line = lines[Math.floor(Math.random() * 281)];
   var list = line.split(" ").filter(function(token) {
     return !!token.length;
   });

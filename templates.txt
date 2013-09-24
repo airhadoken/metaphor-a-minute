@@ -139,7 +139,7 @@ Happiness is {a} {noun-singular}
 Happiness is {a} {adjective} {noun-singular}
 The good, the bad, and the {adjective}
 Where no {noun-singular} has {past-participle} before
-It's {n} o'clock. Do you know where your {noun-plural} are?
+It's {n12} o'clock. Do you know where your {noun-plural} are?
 If it's Tuesday, it must be {noun}
 Holy {noun,adjective}, Batman!
 {noun} and the single {noun-singular}
@@ -149,136 +149,136 @@ Everything you always wanted to know about {noun}, but were afraid to ask
 That's no moon; it's {a} {noun}
 {noun} of {vt-gerund}
 Any sufficiently {adjective} {noun-singular} is indistinguishable from {noun}
-Friends don't let friends X
-X, thy name is Y
-to X is human
-This is your X. This is your X on Y
-All I really need to know about X I learned in Y
-I knew X. (X was a friend of mine.) Y, you are no X
-A kindler, gentler X
-Not your {daddy|father|grandma|granny}'s X
-X, X, X
-Will X for Y
-The mother of all X
-It's the X, stupid
-You might be an X if
-Will someone please think of the X?
-X, N dollars. Y, M dollars. Z, priceless.
-X called. They want their Y back.
-If X then the terrorist have won.
-If by X you mean Y
-Not without my X / Nicht ohne meinen X
-Our man in X / Unser Mann in X
-Death of an X / Tod eines X
-A fistful of X / Fuer eine Handvoll X
-The unbearable lightness of X / Die unertrgliche Leichtigkeit des X
-All roads lead to X / Alle Wege fuehren nach X
-X in times of Y / X in Zeiten des/der Y
-to X is human
-X and let Y / X und Y lassen
-In the beginning there was X / Am Anfang war das X
-One does not simply X into Mordor (suggested in email)
-Xzilla (suggested in comments)
-vast, X-wing conspiracy
-X, and by X I mean Y[not X]
-Age and treachery beat youth and X every time (not sure about this one; http://recycledknowledge.blogspot.com/2007/01/old-farts-have-it.html)
-His X was his undoing
-If you look up X in the dictionary, you'll find a picture of Y
-X is not a crime
-No one ever got fired for X
-How do you make a small fortune in X? Start with a large one.
-I love the smell of X in the morning. (It's the smell of … victory.)
-Bury My Heart at X (Wounded Knee) (German)
-Of X and Y (of mice and men)
-(You can never be) too X or too Y (rich or thin)
-There is no business like X business / there is no X like [adjective/noun] X
-Dial X for X-word (M for Murder)
-Sleepless in X (German)
-Life is too short for X (German)
-All power to X (the people)
-X expects that every Y will do his Z (England expects that every man will do his duty)
-[Grand|Great] unified X
-Who are you and what have you done with X? (http://itre.cis.upenn.edu/~myl/languagelog/archives/005226.html)
-X de chez X (French (mostly) equivalent of “X city” and “Xy McY/Xerson; need notes on origin)
-Post-X (modern)
-X is like Y on Z[drug] (tentative) / X auf Speed (also tentative)
-An X a day keeps the Y away
+Friends don't let friends {verb-intransitive}
+{noun-singular}, thy name is {noun,proper-noun}
+to {verb-intransitive} is human
+This is your {noun-singular}. This is your {$1} on {noun-plural}
+All I really need to know about {noun} I learned in {proper-noun}
+I knew {given-name} {family-name}. {given-name}, you are no {$1} {$2}
+A kindler, gentler {noun}
+Not your {noun}'s {noun}
+{noun}, {$1}, {$1}
+Will {verb-intransitive} for {noun}
+The mother of all {noun-plural}
+It's the {noun}, stupid
+You might be {a} {noun-singular} if
+Will someone please think of the {noun-plural}?
+{noun}, {n} dollars. {noun}, {n} dollars. {noun}, priceless.
+The {noun-plural,proper-noun-plural} called. They want their {noun-singular} back.
+If {noun-plural} {verb-intransitive}, then the terrorists have already won.
+If by {noun} you mean {noun}...
+If by {verb} you mean {verb}...
+If by {adjective} you mean {adjective}...
+Not without my {noun-singular}
+Our man in {proper-noun}
+Death of {a} {noun}
+A fistful of {noun-plural}
+The unbearable lightness of {vi-gerund}
+All roads lead to {proper-noun}
+{noun} in times of {noun}
+to {verb-intransitive} is human
+{verb-intransitive} and let {verb-intransitive}
+In the beginning there was {noun-singular}
+One does not simply {verb-intransitive} into {proper-noun}
+{noun-singular}zilla
+vast, {preposition,adjective}-wing conspiracy
+{noun}, and by {$1} I mean {noun}
+Age and treachery beat youth and {noun} every time
+His {noun-singular} was his undoing
+If you look up {adjective} in the dictionary, you'll find a picture of {noun}
+{vi-gerund} is not a crime
+No one ever got fired for {vt-gerund} {noun}
+How do you make a small fortune in {noun}? Start with a large one.
+I love the smell of {noun} in the morning.
+Bury My Heart at {proper-noun}
+Of {noun-plural} and {noun-plural}
+You can never be too {adjective} or too {adjective}
+There is no business like {adjective,noun} business
+Dial {lc} for {noun}
+Sleepless in {proper-noun}
+Life is too short for {vt-gerund} {adjective} {noun}
+All power to the {noun-plural}
+{proper-noun} expects that every {noun-singular} will do his {vi-gerund}
+Grand unified {noun-singular}
+Who are you and what have you done with {given-name}?
+{noun} de chez {noun}
+Post-{adjective}
+{noun} is like {noun} on steroids
+{a} {noun-singular} a day keeps the {noun} away
 X is bunk (history)
-Portrait of the X as a Y / Porträt des X als Y
-You are X[name] and I claim my Y[often "five pounds"] (British)
-Who's afraid of X?
-the big X in the sky (tentative)
-Semper X (tentative)
-X-(a)holic (morphology)
-X(en)freude (morphology)
-X(o)nomics (morphology)
-Xfest (morphology)
-X(a)thon (morphology)
-SchadenX (morphology)
-X, call your office (original discussed by Ben Zimmer here: http://itre.cis.upenn.edu/~myl/languagelog/archives/004921.html)
-X considered harmful (GOTO, http://xkcd.com/292/)
-Give blood, play X
-homo X (species names)
-X nation
-One (wo)man's X is another (wo)man's Y
-You can't keep a good X down
-X is bliss
-When did it become X to Y?
-Who died and made you X?
-Saving the world, one X at a time
-Make X, not Y
-Crouching X, hidden Y
+Portrait of the {noun-singular} as {a} {adjective} {noun-singular}
+You are {given-name} {family-name} and I claim my {x12} {noun-plural}
+Who's afraid of {adjective} {adjective} {noun-singular}?
+the big {noun} in the sky
+{noun,verb}-a-holic
+{noun}enfreude
+{noun,proper-noun}-o-nomics
+{verb,noun}fest
+{noun}-a-thon (morphology)
+Schaden{noun}
+{given-name} {family-name}, call your office
+Give blood, play {noun}
+Homo {noun}us, the {adjective} man
+{noun,adjective} nation
+One man's {noun} is another man's {noun}
+One woman's {noun} is another woman's {noun}
+You can't keep a good {noun} down
+{noun-singular} is bliss
+When did it become {adjective} to {verb}?
+Who died and made you {noun}?
+Saving the world, one {noun-singular} at a time
+Make {noun}, not {noun}
+Crouching {noun-singular}, hidden {noun-singular}
 X with a capital X
-Put the X in Y
-You can't spell X without Y
-X makes the baby Jesus cry
-on a scale from one to X, (he's a Y) http://itre.cis.upenn.edu/~myl/languagelog/archives/004944.html
-X and the city (X only one syllable?)
-teach an old X new Ys (Y rhymes with “tricks”?)
-you say X, I say Y (tomato)
-the boy who cried X
-today X; tomorrow, the world!
-X 2: Electric Boogaloo
-whatever X wants, X gets
-my X runneth over
-I eat X for breakfast
-X leads to Y. Y leads to Z. Z leads to A.
-X rising
-X, schmX
-I can't believe it's not X
-Honey, I shrunk the X
-Use X to control X (Chinese/Korean) / Fight X with X
-it's X, bitch [not there yet, but popular in the young folks' speech, I hear]
-don't X me, bro! [not there yet, but popular in the young folks' speech, I hear]
-there's no X[letter] in Y[word not containing letter]
-X and the city
-dude, where's my X
-X fu
-X for dummies
-save the X, save the world [not there yet]
-my X is longer than yours
-Blue Horseshoe loves X
-from X's mouth to God's ear (http://itre.cis.upenn.edu/~myl/languagelog/archives/005226.html. snowclone or idiom/proverb with open slot?)
-all that and a X
-every generation gets the X it deserves
-tough on X, (and) tough on the causes of X
-brother, can you spare a X?
-sweet/holy X of Y (attributed to Futurama‘s Hermes whatsit, but this structure is tricky as it's so flexible. his usage is snowcloneish, not sure if I can blanket claim this as one)
-love me, love my X
-if God had intended X, he wouldn't have invented Y
-X out with your Y out
+Put the {lc} in {noun,verb,adjective}
+You can't spell {noun,verb,adjective} without {lc} - {lc} - {lc}
+{vi-gerund} makes the baby Jesus cry
+{noun,adjective} makes the baby Jesus cry
+on a scale from one to {n10}, {noun} is a {n10}
+{noun} and the city
+teach an old {noun-singular} new {noun-plural}
+you say {noun}, I say {noun}
+the boy who cried {noun}
+whatever {proper-name} wants, {$1} gets
+my {noun-singular} runneth over
+I eat {noun} for breakfast
+{vi-gerund} leads to {vi-gerund}. {$2} leads to {vi-gerund}. {$4} leads to {vi-gerund}.
+{noun} rising
+{noun,adjective,verb}, schm{$1}
+I can't believe it's not {noun}!
+Honey, I shrunk the {noun}
+Use {noun} to control {$1}
+Fight {noun} with {$1}
+it's {noun}, bitches!
+Don't {verb} me, bro!
+there's no {lc} in {noun,adjective,verb}
+Dude, where's my {noun-singular}?
+{noun}-fu
+{noun} For Dummies
+save the {noun}, save the world
+my {noun-singular} is {adjective}er than yours
+Blue Horseshoe loves {noun}
+from {proper-name}'s mouth to God's ear
+all that and {a} {noun-singular} of {noun-plural}
+every generation gets the {noun} it deserves
+tough on {noun}, and tough on the causes of {$1}
+brother, can you spare {a} {noun-singular}?
+Sweet Holy {noun} of {proper-name}!
+love me, love my {noun}
+if God had intended {noun-plural}, he wouldn't have invented {noun-plural}
+{verb-intransitive} out with your {noun} out
 show me and X, and I will show you a Y
-X and its enemies
-X and its discontents
-critique of X reason
-X and its friends
-the end of X
-the Rise and Fall of X
-from X with love
-is X dead?
-X is an N-letter word
-one must imagine X happy
-no X please, we're Y
+{noun-singular} and its enemies
+{noun-singular} and its discontents
+critique of {adjective} reason
+{noun-singular} and its friends
+the end of {noun}
+the Rise and Fall of {noun}
+from {proper-name} with love
+is {proper-name,noun} dead?
+{noun} is a {n12}-letter word
+one must imagine {noun} happy
+no {noun} please, we're {proper-name-plural}
 every X has the Y it deserves
 keep X weird
 two, two, two X in one (http://en.wikipedia.org/wiki/Certs)
