@@ -168,11 +168,15 @@ var defaultprocessor = function(value, index, listdfd, getURL) {
 app.get('/', function(req, res){
     res.send("<h1>Recent retweets</h1>" + ((recent_retweets && recent_retweets.length) ? recent_retweets.join("<br>\n") : "No retweets"));
 });
-app.listen(
-  process.env.OPENSHIFT_NODEJS_PORT || process.env.OPENSHIFT_INTERNAL_PORT || 8080,
-  process.env.OPENSHIFT_NODEJS_IP ||
+try {
+  app.listen(
+    process.env.OPENSHIFT_NODEJS_PORT || process.env.OPENSHIFT_INTERNAL_PORT || 8080,
+    process.env.OPENSHIFT_NODEJS_IP ||
                          process.env.OPENSHIFT_INTERNAL_IP);
-
+} catch(e) {
+  console.error(e);
+  //continue app. just forget about serving web
+}
 // insert your twitter app info here
 var T = new Twit({
   consumer_key:     consumer_key, 
