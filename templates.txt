@@ -229,8 +229,8 @@ Who died and made you {noun}?
 Saving the world, one {noun-singular} at a time
 Make {noun}, not {noun}
 Crouching {noun-singular}, hidden {noun-singular}
-X with a capital X
-Put the {lc} in {noun,verb,adjective}
+{noun} with a capital {lc}
+It really puts the {lc} in {noun,verb,adjective}
 You can't spell {noun,verb,adjective} without {lc} - {lc} - {lc}
 {vi-gerund} makes the baby Jesus cry
 {noun,adjective} makes the baby Jesus cry
@@ -264,39 +264,40 @@ every generation gets the {noun} it deserves
 tough on {noun}, and tough on the causes of {$1}
 brother, can you spare {a} {noun-singular}?
 Sweet Holy {noun} of {proper-name}!
-love me, love my {noun}
-if God had intended {noun-plural}, he wouldn't have invented {noun-plural}
+Love me, love my {noun}
+If God had intended {noun-plural}, he wouldn't have invented {noun-plural}
 {verb-intransitive} out with your {noun} out
-show me and X, and I will show you a Y
+Show me {a} {adjective} {noun}, and I will show you a {adjective} {noun}
+Show me {a} {adjective} {noun}, and I will show you a {noun} that {verb-transitive}s it
 {noun-singular} and its enemies
 {noun-singular} and its discontents
-critique of {adjective} reason
+Critique of {adjective} reason
 {noun-singular} and its friends
-the end of {noun}
-the Rise and Fall of {noun}
-from {proper-name} with love
-is {proper-name,noun} dead?
+The end of {noun}
+The Rise and Fall of {noun}
+From {proper-name} with love
+Is {proper-name,noun} dead?
 {noun} is a {n12}-letter word
-one must imagine {noun} happy
-no {noun} please, we're {proper-name-plural}
-every X has the Y it deserves
-keep X weird
-two, two, two X in one (http://en.wikipedia.org/wiki/Certs)
-where good X go to die
-X, sweet X
-this X is clean (Poltergeist)
-what price X?
-a farewell to X
-design for X (X0: living; Noel Coward)
-they can have my X when they pry it from my cold, dead Y (maybe)
-man does not live by X alone
-the X is a lie (from Portal. this is a young one.)
-instant X–just add Y
-all over X like Y on Z
-X, we hardly knew (ye|ya)
-X has no Y; X needs no Y
-great X's ghost (this seems related to the Futurama one, also other Robin-isms)
-the tao of X
+One must imagine {noun} happy
+No {noun} please, we're {proper-noun-plural}
+Every {noun-singular} has the {noun} it deserves
+Keep {proper-name} Weird
+Two, two, two {noun-plural} in one!
+where good {noun-plural} go to die
+{noun}, sweet {$1}
+This {noun-singular} is clean
+What price {noun}?
+A farewell to {noun-plural}
+Design for {vi-gerund}
+They can have my {noun-singular} when they pry it from my cold, dead {noun-plural}
+Man does not live by {noun} alone
+The {noun-singular} is a lie
+Instant {noun} – just add {noun}
+All over {noun} like {noun-plural} on {noun}
+{noun,proper-noun}, we hardly knew ye
+{noun-singular} has no {noun}; {$1} needs no {$2}
+Great {proper-noun}'s ghost!
+The tao of {noun}
 suddenly, X! thousands of them!
 X! X like the wind!
 does this X make me look fat? (X is optional, though)
@@ -336,7 +337,7 @@ when X met Y
 X 101 [same as X for Dummies]
 where's your X now?
 there's gold in them thar X
-one X to rule (Y?) them all
+One {noun-singular} to rule them all
 X agonistes
 X on, Y off
 if X is Y, then I'm Z

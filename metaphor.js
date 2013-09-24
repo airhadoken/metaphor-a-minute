@@ -191,7 +191,7 @@ var T = new Twit({
 //Step 3: when all tokens have resolves (some being dependent on others, or REST calls), render.
 function makeSnowclone() {
   var listdfd = new $.Deferred();
-  var line = lines[Math.floor(Math.random() * 281)];
+  var line = lines[Math.floor(Math.random() * 300)];
   var list = line.split(" ").filter(function(token) {
     return !!token.length;
   });
