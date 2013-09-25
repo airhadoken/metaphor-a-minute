@@ -117,8 +117,8 @@ var processors = {
               var w = ws && ws.filter(function(wd) {
                 return (/ing$/).test(wd.word);
               })[0];
-              w = w || (word + "ing");
-              if(isBlacklisted(w)) {
+              w = w || (word.base + "ing");
+              if(isBlacklisted(word.base) || isBlacklisted(w)) {
                 defaultprocessor(value, index, listdfd, getURL).then(function(ow) {
                   dfd.resolve(ow).done();
                 });
