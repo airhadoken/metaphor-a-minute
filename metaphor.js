@@ -66,7 +66,7 @@ var backref = function(n) {
         return i != null;
       });
       return dfds[idxs[n - 1]].then(function(word) {
-        return words[index].replace(/\{.*\}/, word);
+        return {base : word.base, composed : words[index].replace(/\{.*\}/, word.base)};
       });
     });
   };
@@ -78,26 +78,28 @@ var processors = {
     return listdfd.then(function(pack) {
       var list = pack[0];
       return list[index + 1].then(function(word) {
-        retval = /^[aeiou]/.test(word.trim()) ? "an" : "a";
-        return retval;
+        var retval = /^[aeiou]/.test(word.composed.trim()) ? "an" : "a";
+        return {base : retval, composed : retval};
       });
     });
   }
   , "noun-singular" : function(value, index, listdfd) {
     return defaultprocessor("noun", index, listdfd, "http://api.wordnik.com//v4/words.json/randomWords?" +
-                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" + 
+                  "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" +
                   "minCorpusCount=100&api_key=" + API_KEY + "&excludePartOfSpeech=noun-plural,proper-noun-plural");
   }
   , "n" : (number_func = function(max) {
     return function(value, index, listdfd) {
-      return new $.Deferred().resolve(Math.floor(Math.random() * max) + 1);
-    }
+      var retval = Math.floor(Math.random() * max) + 1;
+      return new $.Deferred().resolve({base : retval, composed : retval.toString()});
+    };
   })(1000)
   , "lc" : function(value, index, listdfd) {
     return listdfd.then(function(pack)  {
-      var token = pack[1][index];
-      var s = token.replace(/\{.*\}/, String.fromCharCode(65 + Math.floor(Math.random() * 26)));
-      return new $.Deferred().resolve(s);
+      var token = pack[1][index]
+      , l = String.fromCharCode(65 + Math.floor(Math.random() * 26))
+      , s = token.replace(/\{.*\}/, l);
+      return new $.Deferred().resolve({ base : l, composed : s });
     });
   }
   , "vi-gerund" : (gerund_func = function(type) {
@@ -105,7 +107,7 @@ var processors = {
       var d = $.Deferred();
       defaultprocessor(type, index, listdfd).then(function(word) {
         restclient.get(
-          "http://api.wordnik.com/v4/word.json/" + word + "/relatedWords?"
+          "http://api.wordnik.com/v4/word.json/" + word.base + "/relatedWords?"
           +"useCanonical=true&relationshipTypes=verb-form&limitPerRelationshipType=10&api_key="
           + API_KEY
           , function(vdata) {
@@ -121,7 +123,7 @@ var processors = {
                   dfd.resolve(ow).done();
                 });
               } else {
-                d.resolve(token.replace(/\{.*\}/, w)).done();
+                d.resolve({ base : w, composed : token.replace(/\{.*\}/, w) }).done();
               }
             });
           }
@@ -141,7 +143,7 @@ var processors = {
 
 var defaultprocessor = function(value, index, listdfd, getURL) {
  getURL = getURL || "http://api.wordnik.com//v4/words.json/randomWords?" +
-                  "hasDictionaryDef=true&includePartOfSpeech=" + value + "&limit=1&" + 
+                  "hasDictionaryDef=true&includePartOfSpeech=" + value + "&limit=1&" +
                   "minCorpusCount=100&api_key=" + API_KEY;
  var dfd = $.Deferred();
  restclient.get(
@@ -155,7 +157,7 @@ var defaultprocessor = function(value, index, listdfd, getURL) {
           dfd.resolve(w).done();
         });
       } else {
-        dfd.resolve(token.replace(/\{.*\}/, word)).done();
+        dfd.resolve({ base : word, composed : token.replace(/\{.*\}/, word) }).done();
       }
     });
   });
@@ -191,7 +193,7 @@ var T = new Twit({
 //Step 3: when all tokens have resolves (some being dependent on others, or REST calls), render.
 function makeSnowclone() {
   var listdfd = new $.Deferred();
-  var line = lines[Math.floor(Math.random() * 300)];
+  var line = lines[Math.floor(Math.random() * lines.length)];
   var list = line.split(" ").filter(function(token) {
     return !!token.length;
   });
@@ -204,7 +206,7 @@ function makeSnowclone() {
             ? processors[tc[1]](tc[1], index, listdfd.promise) 
             : defaultprocessor(tc[1], index, listdfd.promise);
     } else {
-      dfd = new $.Deferred().resolve(token);
+      dfd = new $.Deferred().resolve({ base : token, composed : token });
     }
     return dfd;
   });
@@ -214,8 +216,16 @@ function makeSnowclone() {
     $,
     dfdlist
   ).done(function(results) {
-    if(typeof results !== "string")
+    if(results.composed) {
+      results = results.composed;
+    }
+    if(typeof results !== "string") {
+
+      results = Array.prototype.map.call(results, function(res) {
+        return res.composed;
+      });
       results =  Array.prototype.join.call(results, " ");
+    }
     console.log(results);
 
     T.post('statuses/update', { status: results}, function(err, reply) {

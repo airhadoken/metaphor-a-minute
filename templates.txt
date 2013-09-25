@@ -101,7 +101,7 @@ I made you {a} {noun}, but I eated it
 {noun,adjective}-tastic
 {noun,adjective}-tacular
 One {noun-singular} does not a {noun-singular} make
-That and {n} {noun-plural} will buy you {a} {noun-singular}
+That and {n100} {noun-plural} will buy you {a} {noun-singular}
 a fine line between {noun} and {noun}
 If I had {a} {noun-singular} for every {noun-singular}
 The {noun-singular} that {verb-intransitive}s together {verb-intransitive}s together
@@ -157,11 +157,11 @@ All I really need to know about {noun} I learned in {proper-noun}
 I knew {given-name} {family-name}. {given-name}, you are no {$1} {$2}
 A kindler, gentler {noun}
 Not your {noun}'s {noun}
-{noun}, {$1}, {$1}
+{noun}, {$1}, {$1}!
 Will {verb-intransitive} for {noun}
 The mother of all {noun-plural}
 It's the {noun}, stupid
-You might be {a} {noun-singular} if
+You might be {a} {noun-singular} if...
 Will someone please think of the {noun-plural}?
 {noun}, {n} dollars. {noun}, {n} dollars. {noun}, priceless.
 The {noun-plural,proper-noun-plural} called. They want their {noun-singular} back.
@@ -298,88 +298,78 @@ All over {noun} like {noun-plural} on {noun}
 {noun-singular} has no {noun}; {$1} needs no {$2}
 Great {proper-noun}'s ghost!
 The tao of {noun}
-suddenly, X! thousands of them!
-X! X like the wind!
-does this X make me look fat? (X is optional, though)
-our X, our selves
-what's a little X between friends?
-X ha(th|s) its privileges
-color me X
-he couldn't X his way out of a paper bag
-X is as X does
-bitches don't know 'bout my X (not a lot of instances of this one yet)
-what was is that first attracted you to X, Y?
-N X do not a Y make
-the X whisperer
-X: threat or menace?
-your right to X ends where my Y begins
-X? in my Y? (not sure about this one)
-I am the very model of a modern X
-how I stopped X and learned to love Y
-you can lead an X to Y but you can't make it Z
-come for the X, stay for the Y
-LastName. (pause) FirstName LastName
-I'm bringing X back
-X 2.0
-The Talented Mr. X
-Xes of the world, unite! You have nothing to lose but your Ys!
-the X! it burns!
-you had me at X
-an X we can believe in [http://serendipity.lascribe.net/ling-lang/linguistics/2008/07/a-snowclone-we-can-believe-in/]
-your inner X
-X encounters of a Y kind
-cool Xings
-if you seek X, look around you
-I'm out like an X [Prep [NP Y]]
-love is a many x-[e|o]red thing
-you can lead an X to Y but you can't make him/her/it Z
-when X met Y
-X 101 [same as X for Dummies]
-where's your X now?
-there's gold in them thar X
+suddenly, {noun-plural}! thousands of them!
+{verb}! {verb} like the wind!
+Does this {noun-singular} make me look fat?
+Our {noun-plural}, ourselves
+What's a little {noun} between friends?
+{noun-singular} has its privileges
+Color me {adjective}
+He couldn't {verb} his way out of a paper bag
+{adjective} is as {adjective} does
+What was is that first attracted you to {given-name,proper-noun,noun}, {given-name}?
+{n} {noun-plural} do not a {noun-singular} make
+The {noun} whisperer
+{noun}: threat or menace?
+Your right to {verb} your {noun} ends where my {noun} begins
+I am the very model of a modern {adjective} {noun}
+How I stopped {vi-gerund} and learned to love the {noun}
+You can lead {a} {noun-singular} to {noun} but you can't make it {verb}
+Come for the {noun}, stay for the {noun}
+{family-name} . . . {given-name} {$1}
+I'm bringing {adjective} back
+{noun} 2.0
+{noun-plural} of the world, unite! You have nothing to lose but your {noun-plural}!
+The {noun-singular}! It burns!
+You had me at {noun}
+{a} {noun-singular} we can believe in
+Your inner {noun}
+{adjective} encounters of {a} {adjective} kind
+Cool {vi-gerund}s
+If you seek {noun}, look around you
+I'm out like {a} {noun-singular} {preposition} {a} {noun-singular}
+Love is a many-{noun}ed thing
+When {given-name,proper-noun} met {given-name,proper-noun}
+{noun} 101
+Where's your {noun-singular} now?
+There's gold in them thar {noun-plural}
 One {noun-singular} to rule them all
-X agonistes
-X on, Y off
-if X is Y, then I'm Z
-hot X-on-X action
-just X it and forget it!
-so [many|much] X, so little time
-better the X you know than the Y you don't / más vale X conocido que Y por conocer (see comment on this page)
-X walk with me (not sure about this one, haven't found much variation)
-X giveth; X taketh away
-love in the time of X
-X. Y. Repeat.
-an X's work is never done.
-night of the living X
-we are all X now. (2 senses: monarchists/Keynesians; Americans/Hokies/Georgians)
-they shoot X, don't they?
-the power of X of X compels you!
-when X attack (in reference to reality TV?)
-get your X on
-in X we trust
-X Y is X (long cat; also Xing Y Xes)
-I'd X her Y (is this really a snowclone?)
-the partnership for an X-free Y
-I was a teenage X (werewolf)
-ain't no party like an X party
-let a thousand Xes bloom
-two X, no waiting
-every X in the book
-X(ness) is next to godliness
-X-ass Y/X ass-Y (not sure about this one)
-I take/like my X like I like my Y
-black, white, and X all over
-live long and X
-may the X be with you
-X your Y, X the world
-it's all fun and games until X
-you made your X, now Y (lie) in it
-one giant leap?
-stuff X people like (http://ampersand.gosedesign.net/stuff-_____-people-like/)
-Xer than a Y on Z
-Xware (I think B. Zimmer has written on this one)
-what if they gave an X and nobody came?
-X-shaped hole
-that's no X–it's a space station!
-the X whisperer
-never mind the X, here's Y
+{verb} on, {$1} off
+If {noun-singular} is {noun}, then I'm {noun}
+Hot {noun} on {$1} action
+Just {verb} it and forget it!
+so many {noun-plural}, so little time
+Better the {noun-singular} you know than the {$1} you don't know.
+{proper-noun} giveth; {$1} taketh away
+Love in the time of {noun}
+{verb}. {verb}. Repeat.
+{a} {noun-singular}'s work is never done.
+Night of the living {adjective}
+We are all {noun-plural} now.
+They shoot {noun-plural}, don't they?
+The power of {proper-noun} compels you!
+When {noun-plural} attack
+Get your {verb} on
+In {proper-noun} we trust
+{adjective} {noun-singular} is {$1}
+I'd {verb} that {noun-singular}
+The partnership for {a} {noun-singular}-free {proper-noun}
+I was a teenage {noun}
+Ain't no party like {a} {noun,adjective} party
+Let a thousand {noun-plural} bloom
+Two {noun-plural}, no waiting
+Every {noun-singular} in the book
+{adjective}liness is next to godliness
+I like my {noun-plural} like I like my {noun-plural}: {adjective}
+Black, white, and {adjective} all over
+Live long and {verb}
+May the {noun} be with you
+It's all fun and games until someone {verb}s {a} {noun-singular}
+Stuff {adjective} people like
+{adjective}er than {a} {noun-singular} on {noun}
+{verb}ware
+What if they gave {a} {noun-singular} and nobody came?
+{noun}-shaped hole
+That's no {noun-singular}–it's a space station!
+The {noun} whisperer
+Never mind the {noun-plural}, here's the {noun-plural}!
