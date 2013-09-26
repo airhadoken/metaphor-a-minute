@@ -205,9 +205,9 @@ Who are you and what have you done with {given-name}?
 Post-{adjective}
 {noun} is like {noun} on steroids
 {a} {noun-singular} a day keeps the {noun} away
-X is bunk (history)
+{noun-singular} is bunk 
 Portrait of the {noun-singular} as {a} {adjective} {noun-singular}
-You are {given-name} {family-name} and I claim my {x12} {noun-plural}
+You are {given-name} {family-name} and I claim my {n12} {noun-plural}
 Who's afraid of {adjective} {adjective} {noun-singular}?
 the big {noun} in the sky
 {noun,verb}-a-holic
@@ -372,4 +372,6 @@ What if they gave {a} {noun-singular} and nobody came?
 {noun}-shaped hole
 That's no {noun-singular}–it's a space station!
 The {noun} whisperer
-Never mind the {noun-plural}, here's the {noun-plural}!
+Never mind the {noun-plural}, here's the {noun-plural}
+Not for all the {noun-plural} in the world
+{noun-plural} for some, miniature American flags for others!
