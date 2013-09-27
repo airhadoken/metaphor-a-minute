@@ -91,7 +91,11 @@ var processors = {
   , "n" : (number_func = function(max) {
     return function(value, index, listdfd) {
       var retval = Math.floor(Math.random() * max) + 1;
-      return new $.Deferred().resolve({base : retval, composed : retval.toString()});
+      return listdfd.then(function(pack)  {
+        var token = pack[1][index]
+        , s = token.replace(/\{.*\}/, retval.toString());
+        return new $.Deferred().resolve({base : retval, composed : s});
+      });
     };
   })(1000)
   , "lc" : function(value, index, listdfd) {
@@ -165,8 +169,8 @@ var defaultprocessor = function(value, index, listdfd, getURL) {
 };
 
 
-// I deployed to Nodejitsu, which requires an application to respond to HTTP requests
-// If you're running locally you don't need this, or express at all.
+// If deployed to Nodejitsu, it requires an application to respond to HTTP requests
+// If you're running locally or on Openshift you don't need this, or express at all.
 app.get('/', function(req, res){
     res.send("<h1>Recent retweets</h1>" + ((recent_retweets && recent_retweets.length) ? recent_retweets.join("<br>\n") : "No retweets"));
 });
