@@ -375,3 +375,8 @@ The {noun} whisperer
 Never mind the {noun-plural}, here's the {noun-plural}
 Not for all the {noun-plural} in the world
 {noun-plural} for some, miniature American flags for others!
+{noun-plural} for some, {adjective} {noun-plural} for others!
+{noun-singular} combines the {noun} of {noun} with the {noun} of {noun}
+{noun-singular} combines the {noun} of {noun} with the {noun} of {$3}
+{noun-singular} combines the {adjective} {noun} of {noun} with the {adjective} {noun} of {noun}
+{noun-singular} combines the {adjective} {noun} of {noun} with the {adjective} {noun} of {$4}
