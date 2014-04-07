@@ -88,16 +88,18 @@ var processors = {
                   "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" +
                   "minCorpusCount=100&api_key=" + API_KEY + "&excludePartOfSpeech=noun-plural,proper-noun-plural");
   }
-  , "n" : (number_func = function(max) {
+  , "n" : (number_func = function(max, start, zeropad) {
     return function(value, index, listdfd) {
-      var retval = Math.floor(Math.random() * max) + 1;
+      var retval = Math.floor(Math.random() * max) + start;
       return listdfd.then(function(pack)  {
         var token = pack[1][index]
-        , s = token.replace(/\{.*\}/, retval.toString());
-        return new $.Deferred().resolve({base : retval, composed : s});
+        , pad = "0000000000".slice(max.toString().length)
+        , retstr = zeropad ? (pad + retval.toString()).slice(-pad.length) : retval.toString()
+        , s = token.replace(/\{.*\}/, retstr);
+        return new $.Deferred().resolve({base : retstr, composed : s});
       });
     };
-  })(1000)
+  })(1000, 1)
   , "lc" : function(value, index, listdfd) {
     return listdfd.then(function(pack)  {
       var token = pack[1][index]
@@ -142,7 +144,9 @@ var processors = {
   processors["$" + i] = backref(i);
 });
 [10,12,100,1000].forEach(function(i) {
-  processors["n" + i] = number_func(i);
+  processors["n" + i] = number_func(i, 1);
+  processors["zp" + i] = number_func(i, 0, true);
+  processors["z" + i] = number_func(i, 0);
 });
 
 var defaultprocessor = function(value, index, listdfd, getURL) {
@@ -253,7 +257,7 @@ function favRTs () {
         recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
     });
     if(!tweet.favorited) {
-        T.post('favorites/create.json?id='+tweet.id_str,{},function(e){
+        T.post('favorites/create/'+tweet.id_str+'.json',{},function(e){
       e && console.error("Error creating favorite", e);
         });
     }
