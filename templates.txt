@@ -385,4 +385,5 @@ Not for all the {noun-plural} in the world
 {noun} driven development
 Those who will give up essential {noun} for temporary {noun} deserve neither {$1} nor {$2}
 Information wants to be {adjective}
-
+The {noun} must flow
+He who controls the {noun} controls the universe
