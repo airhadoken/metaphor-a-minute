@@ -84,7 +84,7 @@ var processors = {
     });
   }
   , "noun-singular" : function(value, index, listdfd) {
-    return defaultprocessor("noun", index, listdfd, "http://api.wordnik.com//v4/words.json/randomWords?" +
+    return defaultprocessor("noun", index, listdfd, "http://api.wordnik.com/v4/words.json/randomWords?" +
                   "hasDictionaryDef=true&includePartOfSpeech=noun&limit=1&" +
                   "minCorpusCount=100&api_key=" + API_KEY + "&excludePartOfSpeech=noun-plural,proper-noun-plural");
   }
@@ -150,7 +150,7 @@ var processors = {
 });
 
 var defaultprocessor = function(value, index, listdfd, getURL) {
- getURL = getURL || "http://api.wordnik.com//v4/words.json/randomWords?" +
+ getURL = getURL || "http://api.wordnik.com/v4/words.json/randomWords?" +
                   "hasDictionaryDef=true&includePartOfSpeech=" + value + "&limit=1&" +
                   "minCorpusCount=100&api_key=" + API_KEY;
  var dfd = $.Deferred();
@@ -257,7 +257,7 @@ function favRTs () {
         recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
     });
     if(!tweet.favorited) {
-        T.post('favorites/create/'+tweet.id_str+'.json',{},function(e){
+        T.post('favorites/create.json',{ id : tweet.id_str },function(e){
       e && console.error("Error creating favorite", e);
         });
     }
