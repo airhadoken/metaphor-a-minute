@@ -387,3 +387,4 @@ Those who will give up essential {noun} for temporary {noun} deserve neither {$1
 Information wants to be {adjective}
 The {noun} must flow
 He who controls the {noun} controls the universe
+{verb-transitive} the change you want to see in the world
