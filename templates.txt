@@ -388,3 +388,6 @@ Information wants to be {adjective}
 The {noun} must flow
 He who controls the {noun} controls the universe
 {verb-transitive} the change you want to see in the world
+Be the {noun} you want to see in the world
+{verb-transitive} the {noun} you want to see in the world
+First they {verb-transitive} you, then they {verb-transitive} you, then you win
