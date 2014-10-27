@@ -93,8 +93,8 @@ var processors = {
       var retval = Math.floor(Math.random() * max) + start;
       return listdfd.then(function(pack)  {
         var token = pack[1][index]
-        , pad = "0000000000".slice(max.toString().length)
-        , retstr = zeropad ? (pad + retval.toString()).slice(-pad.length) : retval.toString()
+        , pad = "0000000000".slice((max - 1).toString().length)
+        , retstr = zeropad ? (pad + retval.toString()).slice(-((max - 1).toString().length)) : retval.toString()
         , s = token.replace(/\{.*\}/, retstr);
         return new $.Deferred().resolve({base : retstr, composed : s});
       });
