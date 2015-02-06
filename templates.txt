@@ -391,3 +391,5 @@ He who controls the {noun} controls the universe
 Be the {noun} you want to see in the world
 {verb-transitive} the {noun} you want to see in the world
 First they {verb-transitive} you, then they {verb-transitive} you, then you win
+{verb}! You are alive!
+
