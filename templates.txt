@@ -1,0 +1,395 @@
+don't hate me because I'm {adjective}
+to {verb-intransitive} or not to {$1}
+{noun} is the new {noun}
+I'm not {a} {noun}, but I play one on TV
+I am {noun-singular}, hear me {verb-intransitive}
+{noun,adjective}core
+{noun}gate
+Dammit Jim, I'm {a} {noun}, not {a} {noun}!
+{noun-plural}? We don't need no stinkin' {$1}!
+have {noun-singular} will travel
+save {a} {noun-singular}, ride {a} {noun-singular}
+In {noun}, no one can hear you {verb-intransitive}
+If Eskimos have {n} words for snow, {proper-noun-plural} must have {n} words for {noun}
+In Soviet Russia, {noun-plural} {verb-transitive} you!
+I, for one, welcome our {adjective} overlords
+{noun-plural} and {noun-plural} and {noun-plural} oh my!
+Take this {noun-singular} and shove it!
+When I say {noun}, what I really mean is {noun}
+A few {noun-plural} short of {a} {noun-singular}
+not the {adjective}est {noun} in the {noun-singular}
+{verb-transitive} me no {noun-plural}
+that's not {a} {noun-singular}; this is {a} {$2}
+yes Virginia, there is {a} {proper-noun}
+Im in ur {noun-singular} {vt-gerund} ur {noun-plural}
+If it's wrong to {verb-intransitive}, I don't want to be right
+Got {noun-singular}?
+the only good {noun-singular} is a dead {$1}
+Whatever {verb-transitive}s your {noun}
+going to {verb-intransitive} like I've never {verb-intransitive}ed before
+WW{lc}D?
+we're gonna need a bigger {noun-singular}
+{noun} is hard, let's go shopping
+These are not the {noun-plural} you're looking for
+bring me your poor, your tired, your {adjective}
+There's no crying in {noun}
+{vi-gerund} 2: Electric Boogaloo
+My kingdom for {a} {noun-singular}
+I ❤ {noun}
+This is your brain on {noun}
+The first rule of {noun} is, you don't talk about {$1}
+I {verb-intransitive} therefore I am
+consider the {noun-singular}
+all your {noun-singular} are belong to us
+It's {noun-plural} all the way down
+{n} {noun-plural} to {verb-transitive} before you die
+{noun} is the {adjective}est {noun-singular} this side of the Mississippi
+Who's got two thumbs and {verb-intransitive}s? This guy
+{proper-noun}'s world
+as {a} {noun-singular}, {noun-singular} is a great {noun-singular}
+2 {noun-plural}, 3 {$1}, many {$1}
+{noun-singular,proper-noun} is the {noun-singular,proper-noun} of {noun-singular,proper-noun}
+busier than {a} {adjective} {noun-singular}
+I'm from {proper-noun} and I'm here to help
+now if you'll excuse me, I have {a} {noun-singular} to {verb-transitive}
+Hardly a {noun} goes by without {vi-gerund}
+If that's {noun}, every {noun-singular} should be so lucky
+{noun-plural} gone wild
+no rest for the {adjective}
+{verb-intransitive} and call me {given-name}
+The end of the {noun-singular} as we know it
+A lot of people, when they have a problem, say ‘I know, I'll use {noun}'. Now they have two problems
+{a} {adjective}er shade of {noun}
+If it's not the {noun}, it's the {noun}
+That's why they call it {noun}
+Once {a} {noun}, always {a} {$2}
+What is this {noun-singular} of which you speak?
+{noun-singular}? What is {$1}?
+{adjective,verb-intransitive}y Mc{$1}erson
+{noun} considered harmful
+Hey may be {a} {noun-singular}, but he's our {$2}
+It's {noun-singular}, {given-name}, but not as we know it
+{noun} is to {noun} what {noun} is to {noun}
+{adjective} is to {adjective} what {adjective} is to {adjective}
+{verb} is to {verb} what {verb} is to {verb}
+{noun} is to {noun} what {noun} is to {$2}
+{adjective} is to {adjective} what {adjective} is to {$2}
+{verb} is to {verb} what {verb} is to {$2}
+Sufficient unto the {noun-singular} is the {noun-singular} thereof
+You can't {verb-transitive} your {noun-singular} and {verb-transitive} it too
+Stupid {noun} tricks
+Pimp my {noun}
+If {noun-plural} are outlawed, only outlaws will have {$1}
+A watched {noun-singular} never {verb-intransitive}s
+The once and future {noun-singular}
+Nothing says {vi-gerund} like {noun}
+{noun}: panacea or {noun}?
+Men are from {proper-noun}, women are from {proper-noun}
+{noun-plural} are from Mars, {noun-plural} are from Venus
+{noun-plural} are from {proper-noun}, {noun-plural} are from {proper-noun}
+Are we {adjective,preposition,noun-plural} yet?
+the {noun} from Hell
+{noun} city
+{noun}ville
+{noun-plural,proper-noun-plural} for Jesus
+{noun}'s {$1}
+Step away from the {noun}
+Lol{noun-plural,noun}
+Invisible {noun}
+I can haz {noun}?
+I made you {a} {noun}, but I eated it
+{noun}-lorn
+{noun,adjective}-tastic
+{noun,adjective}-tacular
+One {noun-singular} does not a {noun-singular} make
+That and {n100} {noun-plural} will buy you {a} {noun-singular}
+a fine line between {noun} and {noun}
+If I had {a} {noun-singular} for every {noun-singular}
+The {noun-singular} that {verb-intransitive}s together {verb-intransitive}s together
+You can take the {noun} out of the {noun}, but you can't take the {$2} out of the {$1}
+{noun-plural} will be {$1}
+I've got your {noun} (RIGHT HERE)
+All over but the {noun}
+If you like {noun,noun-plural}, you'll love {noun,noun-plural}
+If you like {vi-gerund}, you'll love {vi-gerund}
+What happens in {proper-noun} stays in {$1}
+Et tu, {given-name}?
+Is that {a} {noun-singular} I see before me?
+{noun} is dead, long live {noun}
+{a} {noun-singular} by any other name
+{noun-singular} is {$1} is {$1} is {$1}
+{noun-singular} is a dish best served {adjective}
+{noun,adjective,proper-noun} or bust
+Every time {noun-plural} {verb-intransitive}, {noun-plural} {verb-intransitive}
+When the going gets {adjective}, the {$1} {verb-intransitive}
+the {noun-singular} to end all {%1}s
+the care and feeding of {noun-plural}
+{n} {noun-plural} can't be wrong
+{n} {noun-plural} agree
+{n} out of {n} {noun-plural} agree
+{vi-gerund} for fun and profit
+today {noun,proper-noun}, tomorrow {noun,proper-noun}!
+Is that {a} {noun-singular} in your pocket?
+{given-name}, I have a feeling we're not in {proper-noun} anymore
+Better {vi-gerund} through {noun}
+{a} {noun-singular} is a terrible thing to {verb-transitive}
+Will the real {noun,proper-noun} please stand up?
+Will the real {given-name} {family-name} please stand up?
+{given-name} has left the building
+Happiness is {a} {noun-singular}
+Happiness is {a} {adjective} {noun-singular}
+The good, the bad, and the {adjective}
+Where no {noun-singular} has {past-participle} before
+It's {n12} o'clock. Do you know where your {noun-plural} are?
+If it's Tuesday, it must be {noun}
+Holy {noun,adjective}, Batman!
+{noun} and the single {noun-singular}
+{adjective} eye for the {adjective} guy
+It's {a} {noun-singular}! It's {a} {noun-singular}! It's {proper-name,given-name,noun}!
+Everything you always wanted to know about {noun}, but were afraid to ask
+That's no moon; it's {a} {noun}
+{noun} of {vt-gerund}
+Any sufficiently {adjective} {noun-singular} is indistinguishable from {noun}
+Friends don't let friends {verb-intransitive}
+{noun-singular}, thy name is {noun,proper-noun}
+to {verb-intransitive} is human
+This is your {noun-singular}. This is your {$1} on {noun-plural}
+All I really need to know about {noun} I learned in {proper-noun}
+I knew {given-name} {family-name}. {given-name}, you are no {$1} {$2}
+A kindler, gentler {noun}
+Not your {noun}'s {noun}
+{noun}, {$1}, {$1}!
+Will {verb-intransitive} for {noun}
+The mother of all {noun-plural}
+It's the {noun}, stupid
+You might be {a} {noun-singular} if...
+Will someone please think of the {noun-plural}?
+{noun}, {n} dollars. {noun}, {n} dollars. {noun}, priceless.
+The {noun-plural,proper-noun-plural} called. They want their {noun-singular} back.
+If {noun-plural} {verb-intransitive}, then the terrorists have already won.
+If by {noun} you mean {noun}...
+If by {verb} you mean {verb}...
+If by {adjective} you mean {adjective}...
+Not without my {noun-singular}
+Our man in {proper-noun}
+Death of {a} {noun}
+A fistful of {noun-plural}
+The unbearable lightness of {vi-gerund}
+All roads lead to {proper-noun}
+{noun} in times of {noun}
+to {verb-intransitive} is human
+{verb-intransitive} and let {verb-intransitive}
+In the beginning there was {noun-singular}
+One does not simply {verb-intransitive} into {proper-noun}
+{noun-singular}zilla
+vast, {preposition,adjective}-wing conspiracy
+{noun}, and by {$1} I mean {noun}
+Age and treachery beat youth and {noun} every time
+His {noun-singular} was his undoing
+If you look up {adjective} in the dictionary, you'll find a picture of {noun}
+{vi-gerund} is not a crime
+No one ever got fired for {vt-gerund} {noun}
+How do you make a small fortune in {noun}? Start with a large one.
+I love the smell of {noun} in the morning.
+Bury My Heart at {proper-noun}
+Of {noun-plural} and {noun-plural}
+You can never be too {adjective} or too {adjective}
+There is no business like {adjective,noun} business
+Dial {lc} for {noun}
+Sleepless in {proper-noun}
+Life is too short for {vt-gerund} {adjective} {noun}
+All power to the {noun-plural}
+{proper-noun} expects that every {noun-singular} will do his {vi-gerund}
+Grand unified {noun-singular}
+Who are you and what have you done with {given-name}?
+{noun} de chez {noun}
+Post-{adjective}
+{noun} is like {noun} on steroids
+{a} {noun-singular} a day keeps the {noun} away
+{noun-singular} is bunk 
+Portrait of the {noun-singular} as {a} {adjective} {noun-singular}
+You are {given-name} {family-name} and I claim my {n12} {noun-plural}
+Who's afraid of {adjective} {adjective} {noun-singular}?
+the big {noun} in the sky
+{noun,verb}-a-holic
+{noun}enfreude
+{noun,proper-noun}-o-nomics
+{verb,noun}fest
+{noun}-a-thon
+Schaden{noun}
+{given-name} {family-name}, call your office
+Give blood, play {noun}
+Homo {noun}us, the {adjective} man
+{noun,adjective} nation
+One man's {noun} is another man's {noun}
+One woman's {noun} is another woman's {noun}
+You can't keep a good {noun} down
+{noun-singular} is bliss
+When did it become {adjective} to {verb}?
+Who died and made you {noun}?
+Saving the world, one {noun-singular} at a time
+Make {noun}, not {noun}
+Crouching {noun-singular}, hidden {noun-singular}
+{noun} with a capital {lc}
+It really puts the {lc} in {noun,verb,adjective}
+You can't spell {noun,verb,adjective} without {lc} - {lc} - {lc}
+{vi-gerund} makes the baby Jesus cry
+{noun,adjective} makes the baby Jesus cry
+on a scale from one to {n10}, {noun} is a {n10}
+{noun} and the city
+teach an old {noun-singular} new {noun-plural}
+you say {noun}, I say {noun}
+the boy who cried {noun}
+whatever {proper-name} wants, {$1} gets
+my {noun-singular} runneth over
+I eat {noun} for breakfast
+{vi-gerund} leads to {vi-gerund}. {$2} leads to {vi-gerund}. {$4} leads to {vi-gerund}.
+{noun} rising
+{noun,adjective,verb}, schm{$1}
+I can't believe it's not {noun}!
+Honey, I shrunk the {noun}
+Use {noun} to control {$1}
+Fight {noun} with {$1}
+it's {noun}, bitches!
+Don't {verb} me, bro!
+there's no {lc} in {noun,adjective,verb}
+Dude, where's my {noun-singular}?
+{noun}-fu
+{noun} For Dummies
+save the {noun}, save the world
+my {noun-singular} is {adjective}er than yours
+Blue Horseshoe loves {noun}
+from {proper-name}'s mouth to God's ear
+all that and {a} {noun-singular} of {noun-plural}
+every generation gets the {noun} it deserves
+tough on {noun}, and tough on the causes of {$1}
+brother, can you spare {a} {noun-singular}?
+Sweet Holy {noun} of {proper-name}!
+Love me, love my {noun}
+If God had intended {noun-plural}, he wouldn't have invented {noun-plural}
+{verb-intransitive} out with your {noun} out
+Show me {a} {adjective} {noun}, and I will show you a {adjective} {noun}
+Show me {a} {adjective} {noun}, and I will show you a {noun} that {verb-transitive}s it
+{noun-singular} and its enemies
+{noun-singular} and its discontents
+Critique of {adjective} reason
+{noun-singular} and its friends
+The end of {noun}
+The Rise and Fall of {noun}
+From {proper-name} with love
+Is {proper-name,noun} dead?
+{noun} is a {n12}-letter word
+One must imagine {noun} happy
+No {noun} please, we're {proper-noun-plural}
+Every {noun-singular} has the {noun} it deserves
+Keep {proper-name} Weird
+Two, two, two {noun-plural} in one!
+where good {noun-plural} go to die
+{noun}, sweet {$1}
+This {noun-singular} is clean
+What price {noun}?
+A farewell to {noun-plural}
+Design for {vi-gerund}
+They can have my {noun-singular} when they pry it from my cold, dead {noun-plural}
+Man does not live by {noun} alone
+The {noun-singular} is a lie
+Instant {noun} – just add {noun}
+All over {noun} like {noun-plural} on {noun}
+{noun,proper-noun}, we hardly knew ye
+{noun-singular} has no {noun}; {$1} needs no {$2}
+Great {proper-noun}'s ghost!
+The tao of {noun}
+suddenly, {noun-plural}! thousands of them!
+{verb}! {verb} like the wind!
+Does this {noun-singular} make me look fat?
+Our {noun-plural}, ourselves
+What's a little {noun} between friends?
+{noun-singular} has its privileges
+Color me {adjective}
+He couldn't {verb} his way out of a paper bag
+{adjective} is as {adjective} does
+What was is that first attracted you to {given-name,proper-noun,noun}, {given-name}?
+{n} {noun-plural} do not a {noun-singular} make
+The {noun} whisperer
+{noun}: threat or menace?
+Your right to {verb} your {noun} ends where my {noun} begins
+I am the very model of a modern {adjective} {noun}
+How I stopped {vi-gerund} and learned to love the {noun}
+You can lead {a} {noun-singular} to {noun} but you can't make it {verb}
+Come for the {noun}, stay for the {noun}
+{family-name} . . . {given-name} {$1}
+I'm bringing {adjective} back
+{noun} 2.0
+{noun-plural} of the world, unite! You have nothing to lose but your {noun-plural}!
+The {noun-singular}! It burns!
+You had me at {noun}
+{a} {noun-singular} we can believe in
+Your inner {noun}
+{adjective} encounters of {a} {adjective} kind
+Cool {vi-gerund}s
+If you seek {noun}, look around you
+I'm out like {a} {noun-singular} {preposition} {a} {noun-singular}
+Love is a many-{noun}ed thing
+When {given-name,proper-noun} met {given-name,proper-noun}
+{noun} 101
+Where's your {noun-singular} now?
+There's gold in them thar {noun-plural}
+One {noun-singular} to rule them all
+{verb} on, {$1} off
+If {noun-singular} is {noun}, then I'm {noun}
+Hot {noun} on {$1} action
+Just {verb} it and forget it!
+so many {noun-plural}, so little time
+Better the {noun-singular} you know than the {$1} you don't know.
+{proper-noun} giveth; {$1} taketh away
+Love in the time of {noun}
+{verb}. {verb}. Repeat.
+{a} {noun-singular}'s work is never done.
+Night of the living {adjective}
+We are all {noun-plural} now.
+They shoot {noun-plural}, don't they?
+The power of {proper-noun} compels you!
+When {noun-plural} attack
+Get your {verb} on
+In {proper-noun} we trust
+{adjective} {noun-singular} is {$1}
+I'd {verb} that {noun-singular}
+The partnership for {a} {noun-singular}-free {proper-noun}
+I was a teenage {noun}
+Ain't no party like {a} {noun,adjective} party
+Let a thousand {noun-plural} bloom
+Two {noun-plural}, no waiting
+Every {noun-singular} in the book
+{adjective}liness is next to godliness
+I like my {noun-plural} like I like my {noun-plural}: {adjective}
+Black, white, and {adjective} all over
+Live long and {verb}
+May the {noun} be with you
+It's all fun and games until someone {verb}s {a} {noun-singular}
+Stuff {adjective} people like
+{adjective}er than {a} {noun-singular} on {noun}
+{verb}ware
+What if they gave {a} {noun-singular} and nobody came?
+{noun}-shaped hole
+That's no {noun-singular}–it's a space station!
+The {noun} whisperer
+Never mind the {noun-plural}, here's the {noun-plural}
+Not for all the {noun-plural} in the world
+{noun-plural} for some, miniature American flags for others!
+{noun-plural} for some, {adjective} {noun-plural} for others!
+{noun-singular} combines the {noun} of {noun} with the {noun} of {noun}
+{noun-singular} combines the {noun} of {noun} with the {noun} of {$3}
+{noun-singular} combines the {adjective} {noun} of {noun} with the {adjective} {noun} of {noun}
+{noun-singular} combines the {adjective} {noun} of {noun} with the {adjective} {noun} of {$4}
+20{zp100} is {noun} awareness year
+{noun} driven development
+Those who will give up essential {noun} for temporary {noun} deserve neither {$1} nor {$2}
+Information wants to be {adjective}
+The {noun} must flow
+He who controls the {noun} controls the universe
+{verb-transitive} the change you want to see in the world
+Be the {noun} you want to see in the world
+{verb-transitive} the {noun} you want to see in the world
+First they {verb-transitive} you, then they {verb-transitive} you, then you win
+{verb}! You are alive!
+The reality is that the {adjective} state is {$1}. Very {$1}.

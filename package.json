@@ -1,0 +1,17 @@
+{
+  "name": "snowclone-a-minute",
+  "main": "metaphor.js",
+  "scripts": {
+    "start": "metaphor.js"
+  },
+  "version": "0.6.0",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "node-restclient": "*",
+    "twit": "*",
+    "express": "*",
+    "deferred": "*"
+  }
+}
