@@ -1,0 +1,17 @@
+{
+	"config": {
+    "API_KEY_NOTES": "The API_KEY config is set to the value of your Wordnik Developer API key.  Once you get your",
+    "API_KEY_NOTES": " Wordnik Developer key, paste the value inside the quotes below.",
+    "API_KEY": "",
+    
+    "OTHER_NOTES": "The other things here are retrieved from Twitter's API app interface.  When you create a Twitter API app, you will",
+    "OTHER_NOTES": " receive the consumer key and consumer secret as part of the app.  You will need to separately",
+    "OTHER_NOTES": " create the access token, which will give you the values for access_token and access_token_secret.",
+    "OTHER_NOTES": " Paste the values for each of these inside the quotes below, next to the corresponding key.",
+
+    "consumer_key": "",
+    "consumer_secret": "",
+    "access_token": "",
+    "access_token_secret": ""
+	}
+}

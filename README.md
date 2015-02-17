@@ -5,9 +5,9 @@ Requires [node](http://nodejs.org/) and [npm](http://npmjs.org/). You also need 
 
 Finally, you need a Wordnik API key, which you can apply for here: http://developer.wordnik.com/
 
-You'll need to add all that info to metaphor.js before running the program, otherwise Wordnik and Twitter won't play nice.  If you are hosting on Openshift, like I do, put those additions in a commit on a branch that tracks your Openshift git repo, and merge from Github as necessary.  This keeps your private things private, and you can still make commits!
+You'll need to add all that info to config.json before running the program, otherwise Wordnik and Twitter won't play nice with your snowclones!  If you are hosting on Openshift, like I do, put the private configuration additions in a commit on a branch that tracks your Openshift git repo, work on the Github branches as you make changes, and merge from the Github branch to the OpenShift branch before you deploy.  This keeps your private things private, and you can still make commits back to the source!
 
-The package.json included here is enough to get started on Openshift, but to run locally, install the following packages:
+The package.json included here is enough to get started (i.e. resolve all dependencies) on Openshift, but to run locally, install the following packages:
 
 > npm install node-restclient@0.0.1
 
@@ -49,7 +49,7 @@ The fun lies in making random bits, which can come from a fairly rich set of sou
 > Example: "{lc} for effort" -> "P for effort"
 
 * {$1} through {$9} provide "backreferences" to previous curly-brace tokens, displaying the same item as was displayed for them.
-> Example: "James {lc}, and the {$2} is for {noun}" -> "James W, and the W is for grapefruit"
+> Example: "James {lc}, and the {$1} is for {noun}" -> "James W, and the W is for grapefruit"
 
 * A comma-separated list of one or more Wordnik-recognized parts of speech (noun, adjective, verb, adverb, interjection, pronoun, preposition, abbreviation, affix, article, auxiliary-verb, conjunction, definite-article, family-name, given-name, idiom, imperative, noun-plural, noun-posessive, past-participle, phrasal-prefix, proper-noun, proper-noun-plural, proper-noun-posessive, suffix, verb-intransitive, verb-transitive) will query Wordnik for a random word from one of those parts of speech and provide it to the template.
 > Example: "{noun,adjective} is {$1}" -> "radish is radish" or "reddish is reddish"; "{verb} faster!" -> "peels faster!"

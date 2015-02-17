@@ -67,7 +67,7 @@ What is this {noun-singular} of which you speak?
 {noun-singular}? What is {$1}?
 {adjective,verb-intransitive}y Mc{$1}erson
 {noun} considered harmful
-Hey may be {a} {noun-singular}, but he's our {$2}
+He may be {a} {noun-singular}, but he's our {$2}
 It's {noun-singular}, {given-name}, but not as we know it
 {noun} is to {noun} what {noun} is to {noun}
 {adjective} is to {adjective} what {adjective} is to {adjective}

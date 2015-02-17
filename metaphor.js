@@ -4,15 +4,18 @@ var Twit = require('twit');
 var express = require('express');
 var deferred = require("deferred");
 var app = express();
-// Set the values of these before deploying.
-var API_KEY, consumer_key, consumer_secret, access_token, access_token_secret;
+var config = require("./config.json");
 var recent_retweets = [];
 var $ = {
   Deferred : deferred
   , when : deferred
 };
 
-
+var API_KEY = config.API_KEY;
+var consumer_key = config.consumer_key;
+var consumer_secret = config.consumer_secret;
+var access_token = config.access_token; 
+var access_token_secret = config.access_token_secret;
 
 var lines;
 try {
