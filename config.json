@@ -1,5 +1,4 @@
 {
-	"config": {
     "API_KEY_NOTES": "The API_KEY config is set to the value of your Wordnik Developer API key.  Once you get your",
     "API_KEY_NOTES": " Wordnik Developer key, paste the value inside the quotes below.",
     "API_KEY": "",
@@ -13,5 +12,4 @@
     "consumer_secret": "",
     "access_token": "",
     "access_token_secret": ""
-	}
 }
