@@ -24,7 +24,7 @@ Then to try it out locally:
 Quick dev guide
 ============
 
-Other than the items above which need to be inserted into metaphor.js, there is zero coding required to extend Snowclone-a-Minute.  You need only to add templates to templates.txt and relaunch the node process to tweet snowclones or any templated form however you see fit.
+Once your config is set up by pasting the right values into config.json, there is zero coding required to extend Snowclone-a-Minute.  You need only to add templates to templates.txt and relaunch the node process to tweet snowclones or any templated form however you see fit.
 
 Command language
 ----------------
