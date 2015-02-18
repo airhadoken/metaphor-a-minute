@@ -11,5 +11,10 @@
     "consumer_key": "",
     "consumer_secret": "",
     "access_token": "",
-    "access_token_secret": ""
+    "access_token_secret": "",
+
+    "INTERVAL_NOTES": "If you'd like to change the frequency of posting from the default 2 minutes (120000ms), ",
+    "INTERVAL_NOTES": " set it with the interval key here.  Note that 120000(ms) is the minimum that will be accepted",
+    "INTERVAL_NOTES": " by the Twitter API.",
+    "interval": 120000
 }

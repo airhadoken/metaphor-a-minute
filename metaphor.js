@@ -260,7 +260,7 @@ function favRTs () {
         recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
     });
     if(!tweet.favorited) {
-        T.post('favorites/create.json',{ id : tweet.id_str },function(e){
+        T.post('favorites/create/' + tweet.id_str + '.json',{}, function(e){
       e && console.error("Error creating favorite", e);
         });
     }
@@ -281,7 +281,7 @@ setInterval(function() {
  catch (e) {
     console.log(e);
   }
-},120000);
+}, parseInt(config.interval) >= 120000 ? parseInt(config.interval) : 120000);
 
 // every 5 hours, check for people who have RTed a metaphor, and favorite that metaphor
 setInterval(function() {
