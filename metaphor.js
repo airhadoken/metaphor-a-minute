@@ -260,7 +260,7 @@ function favRTs () {
         recent_retweets.unshift(tweet.text + " [Retweeted by " + (sns || "unknown") + "]");
     });
     if(!tweet.favorited) {
-        T.post('favorites/create/' + tweet.id_str + '.json',{}, function(e){
+        T.post('favorites/create.json?id=' + tweet.id_str,{}, function(e){
       e && console.error("Error creating favorite", e);
         });
     }
