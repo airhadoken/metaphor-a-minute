@@ -400,3 +400,5 @@ I like {noun-plural}. I like the whooshing sound they make as they go by.
 {a} {noun-singular} without {noun} is like a {noun-singular} without {noun}.
 Keep {proper-noun} weird.
 Keep {proper-noun} {adjective}.
+I was into {noun-singular} before it was cool.
+I was into {noun-singular} before it was {adjective}.
