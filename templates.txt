@@ -402,3 +402,4 @@ Keep {proper-noun} weird.
 Keep {proper-noun} {adjective}.
 I was into {noun-singular} before it was cool.
 I was into {noun-singular} before it was {adjective}.
+It's 20{zp100}. The resistance is led by {proper-noun} and {proper-noun}.
