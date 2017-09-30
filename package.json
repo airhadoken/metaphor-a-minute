@@ -2,7 +2,7 @@
   "name": "snowclone-a-minute",
   "main": "metaphor.js",
   "scripts": {
-    "start": "metaphor.js"
+    "start": "node metaphor.js"
   },
   "version": "0.6.0",
   "engines": {
