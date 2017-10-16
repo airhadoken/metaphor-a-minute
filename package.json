@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node metaphor.js"
   },
-  "version": "0.6.0",
+  "version": "0.6.1",
   "engines": {
     "node": "0.10.x"
   },
