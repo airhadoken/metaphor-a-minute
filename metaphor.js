@@ -4,7 +4,7 @@ var Twit = require('twit');
 var express = require('express');
 var deferred = require("deferred");
 var app = express();
-var config = require("./config.json");
+var config = process.env;//require("./config.json");
 var recent_retweets = [];
 var $ = {
   Deferred : deferred
