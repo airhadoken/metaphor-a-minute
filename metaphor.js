@@ -183,9 +183,9 @@ app.get('/', function(req, res){
 });
 try {
   app.listen(
-    process.env.OPENSHIFT_NODEJS_PORT || process.env.OPENSHIFT_INTERNAL_PORT || 8080,
-    process.env.OPENSHIFT_NODEJS_IP ||
-                         process.env.OPENSHIFT_INTERNAL_IP);
+    // openshift v3 allocates ports based on your service name.  this works for the snowclone-a-minute deploy but you might need to change these
+    process.env.TWITTER_JOINTS_SERVICE_PORT || 8080,
+    process.env.TWITTER_JOINTS_SERVICE_HOST);
 } catch(e) {
   console.error(e);
   //continue app. just forget about serving web
